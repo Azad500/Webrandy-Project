@@ -2,6 +2,7 @@ import OurClientsStyle from "../OurClients/OurClients.module.scss";
 import AllInformationsJS from "../../Informations";
 import backgroundCirclePink from "../../Images/OurClients/OurClientBackgroundCircle.svg";
 import backgroundCircleGray from "../../Images/OurClients/OurClientBackgroundCircleGray.svg";
+import OurClientsSlider from "./OurClientsSlider";
 
 export default function OurClients({ ourClientsRef }) {
   return (
@@ -40,32 +41,6 @@ export default function OurClients({ ourClientsRef }) {
                 <p className={OurClientsStyle.description}>{client.desc}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-      <div className={OurClientsStyle.flowingTextContainer}>
-        <div className={OurClientsStyle.wrapper}>
-          <div className={OurClientsStyle.rotate1}>
-            {AllInformationsJS?.OurClients?.CompanyName?.map(
-              (company, index) => (
-                <span key={index} className={OurClientsStyle.flowing1}>
-                  <img src={company.logoImg} alt="" />
-                  {company.title}
-                </span>
-              )
-            )}
-          </div>
-        </div>
-        <div className={OurClientsStyle.wrapper}>
-          <div className={OurClientsStyle.rotate3}>
-            {AllInformationsJS?.OurClients?.CompanyName?.map(
-              (company, index) => (
-                <span key={index} className={OurClientsStyle.flowing1}>
-                  <img src={company.logoImg} alt="" />
-                  {company.title}
-                </span>
-              )
-            )}
           </div>
         </div>
       </div>

@@ -1,0 +1,53 @@
+.logoContainer::-webkit-scrollbar {
+  display: none;
+}
+.logoContainer {
+  .upSliderContainer {
+    display: flex;
+    .upSlider {
+      display: flex;
+      padding-right: 180px;
+      height: 60px;
+      align-items: center;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      animation: 1.5s slide infinite linear;
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      p {
+        color: white;
+        padding-left: 16px;
+      }
+    }
+  }
+  .downSliderContainer {
+    display: flex;
+    .downSlider {
+      display: flex;
+      padding-right: 180px;
+      height: 80px;
+      align-items: center;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      animation: 1.5s slider infinite linear;
+      @keyframes slider {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      p {
+        color: white;
+        padding-left: 16px;
+      }
+    }
+  }
+}
