@@ -1,0 +1,176 @@
+@import "../../Scss/Responsive\ measure/measure";
+
+.servicesSection {
+  border-radius: 24px 24px 0px 0px;
+  background: #f0f1fa;
+  width: 100%;
+  text-align: center;
+  padding: 24px 8px;
+  z-index: 5;
+  @include responsive992 {
+    padding: 64px 80px;
+    border-radius: 70px 70px 0 0;
+  }
+
+  h2 {
+    color: #171717;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 1.25rem;
+    
+    @include responsive728 {
+      font-size: 1.5rem;
+    }
+    @include responsive992 {
+      text-align: left;
+      margin-bottom: 50px;
+      font-size: 3.5rem;
+    }
+  }
+  .servicesLeftRightPart {
+    @include responsive992 {
+      display: flex;
+      gap: 80px;
+    }
+    .CategoriDiv {
+      margin: 18px 0;
+      @include responsive992{
+        margin: auto 0;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        overflow-y: hidden;
+        width: 100%;
+        gap: 8px;
+        @include responsive450 {
+          justify-content: center;
+        }
+        @include responsive992 {
+          flex-direction: column;
+          width: 30vw;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          text-align: left;
+          white-space: nowrap;
+          color: #606060;
+          font-size: 0.74rem;
+          padding: 8px 12px;
+          border-radius: 8px;
+
+          cursor: pointer;
+          &.selected {
+            border: 1px solid #000;
+            color: #000;
+          }
+          @include responsive992 {
+            justify-content: left;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 21px 52px;
+          }
+        }
+      }
+    }
+    .description {
+      min-width: 304px;
+      display: flex;
+      flex-direction: column;
+      .imgBox {
+        max-width: auto;
+        border-radius: 10px;
+        object-fit: contain;
+
+        img {
+          width: 100%;
+          object-fit: fill;
+          border-radius: 10px;
+        }
+      }
+      p {
+        text-align: start;
+        padding: 7px;
+        color: #606060;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        white-space: normal;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+
+        @include responsive728 {
+          order: 2;
+          font-size: 1rem;
+        }
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        .hashtag {
+          display: flex;
+          list-style: none;
+          gap: 8px;
+          display: none;
+          @include responsive728 {
+            display: flex;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+            color: #606060;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 8px;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 0.8rem;
+            padding: 8px 12px;
+          }
+        }
+        .rightButton {
+          color: #000;
+          cursor: pointer;
+          img {
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+ul::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* Track */
+ul::-webkit-scrollbar-track {
+  border-radius: 10px;
+  opacity: 0;
+}
+
+/* Handle */
+ul::-webkit-scrollbar-thumb {
+  background: #f0f1fa;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+/* Handle on hover */
+ul::-webkit-scrollbar-thumb:hover {
+  background: #f0f1fa;
+}

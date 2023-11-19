@@ -1,0 +1,58 @@
+@import "../../Scss/Responsive\ measure/measure";
+
+.container {
+  position: relative;
+  .paginationContainer {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    .paginationWrapper {
+      margin: auto;
+      .imagesWrapper {
+        img {
+          width: 100%;
+          padding-left: 16px;
+          padding-right: 16px;
+          @include responsive1440 {
+            width: 450px;
+          }
+          @include responsive1540 {
+            width: 500px;
+          }
+          @include responsive1640 {
+            width: 520px;
+          }
+          @include responsive1740 {
+            width: 550px;
+          }
+          @include responsive1840 {
+            width: 580px;
+          }
+          @include responsive1920 {
+            width: 620px;
+          }
+        }
+      }
+      .textsWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 40px;
+        p {
+          width: 60%;
+          padding-top: 14px;
+          color: #080808;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-align: start;
+        }
+        img {
+          cursor: pointer;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

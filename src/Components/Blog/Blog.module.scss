@@ -1,0 +1,84 @@
+@import "../../Scss/Responsive\ measure/measure";
+.blogContainer {
+  background: #f0f1fa;
+  @include responsive992 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .blogTextAndSearchElements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 16px 24px 16px;
+    @include responsive768 {
+      padding: 41px 0 46px 0;
+    }
+    @include responsive768 {
+      justify-content: center;
+    }
+    @include responsive992 {
+      width: 91%;
+      margin: auto;
+      justify-content: space-between;
+    }
+    .blogTextElement {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      @include responsive768 {
+        font-size: 24px;
+      }
+      @include responsive992 {
+        font-size: 44px;
+      }
+    }
+    .searchElement {
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      cursor: pointer;
+      @include responsive768 {
+        display: none;
+      }
+      @include responsive992 {
+        display: flex;
+      }
+      p {
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.158px;
+        @include responsive992 {
+          font-size: 14px;
+        }
+      }
+      img {
+        padding-left: 10px;
+      }
+    }
+  }
+  .paginationForMobile {
+    @include responsive768 {
+      display: none;
+    }
+  }
+  .paginationForTablet {
+    display: none;
+    @include responsive768 {
+      display: block;
+    }
+    @include responsive992 {
+      display: none;
+    }
+  }
+  .paginationForLaptop {
+    display: none;
+    @include responsive992 {
+      display: block;
+    }
+  }
+}

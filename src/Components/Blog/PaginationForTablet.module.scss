@@ -1,0 +1,52 @@
+@import "../../Scss/Responsive\ measure/measure";
+
+.container {
+  position: relative;
+  .arrowElement {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  .leftArrowElement {
+    top: 155px;
+  }
+  .rightArrowElement {
+    right: 0;
+    top: 155px;
+  }
+  .paginationContainer::-webkit-scrollbar {
+    display: none;
+  }
+  .paginationContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: relative;
+    .paginationWrapper {
+      .imagesWrapper {
+        img {
+          width: 350px;
+          height: 360px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      .textsWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 40px;
+        p {
+          width: 60%;
+          padding-top: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../Scss/Responsive\ measure/measure";
+
+.informationsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  .imagesInInformations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .arrow {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding-bottom: 70px;
+    }
+    .slideContainer {
+      .imagesAndTexts {
+        .imagesElement {
+          width: 100%;
+          min-height: 300px;
+          padding-bottom: 14px;
+        }
+        .textAndArrowElement {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          p {
+            width: 70%;
+            overflow: hidden;
+            color: #080808;
+            text-overflow: ellipsis;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+          }
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.animate {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}

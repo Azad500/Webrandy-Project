@@ -1,0 +1,30 @@
+@import "./Scss/Responsive\ measure/measure";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  font-family: "Lexend", sans-serif;
+}
+body {
+  text-align: center;
+  div {
+    main {
+      position: absolute;
+      top: 37%;
+      left: 0;
+      right: 0;
+
+      @include responsive728 {
+        top: 52%;
+      }
+      @include responsive992 {
+        top: 62%;
+      }
+      @include responsive1400 {
+        top: 75%;
+      }
+    }
+  }
+}
