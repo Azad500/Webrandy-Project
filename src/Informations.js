@@ -4,7 +4,6 @@ import designJPG from "../src/Images/Services/design.png";
 import researchingJPG from "../src/Images/Services/researching.png";
 import mobileAppJPG from "../src/Images/Services/mobileApp.png";
 import BrandingImgJPG from "../src/Images/Services/branding.png";
-import AboutUsImg from "../src/Images/AboutUs/AboutUs.mp4";
 import AzadMirzəzadə from "../src/Images/TeamImage/AzadMirzəzadə.png";
 import FidanMuradova from "../src/Images/TeamImage/FidanMuradova.png";
 import MahirTağıyev from "../src/Images/TeamImage/MahirTağıyev.png";
@@ -17,8 +16,6 @@ import WallIt from "../src/Images/OurClients/wallIt.svg";
 import AdressArchClient from "./Images/OurClients/AdressArchClient.png";
 import Client2 from "./Images/OurClients/Client2.png";
 import Client3 from "./Images/OurClients/Client3.png";
-
-import companyLogo1 from "./Images/OurClients/companyLogo.png";
 
 const AllInformationsJS = {
   SameParts: {
@@ -87,18 +84,18 @@ const AllInformationsJS = {
     ],
   },
   OurClients: {
-    OurClientsTextInHeader: "Our Clients",
+    OurClientsTextInHeader: "Partnyorlar",
     ClientData: [
       {
         img: AdressArchClient,
-        name: "Fərhad ",
-        surname: "Abbasov",
+        name: "Adress ",
+        surname: "Arch",
         desc: "“Webrandy” komandası ilə işləmək həqiqətən möhtəşəmdir. Brief-i aldıqdan sonra gerisi onlardadır. Hər şeyi çox keyfiyyətli və gözoxşuyan şəkildə təhvil verdilər. Möhtəşəm!!!",
       },
       {
         img: Client2,
-        name: "Adress ",
-        surname: "Arch",
+        name: "Fərhad ",
+        surname: "Abbasov",
         desc: "“Webrandy” tək kəliməylə möhtəşəmdilər. Enerjiləri, pozitivliyi çox əladır. Onlarla işləməkdən həqiqətən zövq aldım. ",
       },
       {
@@ -185,8 +182,7 @@ const AllInformationsJS = {
   },
   AboutUsPart: {
     partName: "Haqqımızda",
-    img: AboutUsImg,
-    FirstText: "Webrandy team",
+    FirstText: "Webrandy komanda",
     SecondText:
       "Biz, Webrandy komandası olaraq istifadəçi təcrübəsi  (UX), qrafik dizayn, veb və mobil proqramlaşdırma və brendinq üzrə ixtisaslaşmışıq. Layihələrimizdə təkcə bacarıqlarımızı deyil, həm də sevgimizi ortaya qoyuruq. Müştərilərimizin vizyonunu reallığa çevirmək əzmimizlə hər bir layihədə brendlərin sərhədlərini yenidən müəyyənləşdiririk. İstifadəçilər üçün ən əlçatan məhsullar hazırlayırıq. Webrandy komandası olaraq biz burada təkcə bizneslə məşğul olmaq üçün deyil, rəqəmsal sənət əsərləri yaratmaq üçün də buradayıq. Təcrübəli və bacarıqlı dizaynerlərimiz sənət əsərlərini, araşdırmaçılarımızın istifadəçiləri və hədəf kütləsini araşdırmalarına uyğun şəkildə dizayn edir. Veb layihələri isə bu dizayn nümunələri əsasında proqramçılarımız hazırlayıb təhvil verirlər.",
   },
@@ -213,7 +209,7 @@ const AllInformationsJS = {
       "Четыре подробных лендинга для четырех разных колонок Яндекса сдемонстрацией их возможностей.",
   },
   TeamPart: {
-    TeamText: "Team",
+    TeamText: "Komanda",
     teamMates: [
       {
         Img: AzadMirzəzadə,

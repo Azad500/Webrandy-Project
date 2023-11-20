@@ -171,13 +171,18 @@ ul::-webkit-scrollbar-track {
 }
 
 /* Handle */
-ul::-webkit-scrollbar-thumb {
-  background: #f0f1fa;
-  border-radius: 10px;
-  opacity: 0;
+// ul::-webkit-scrollbar-thumb {
+//   background: #f0f1fa;
+//   border-radius: 10px;
+//   opacity: 0;
+// }
+ul::-webkit-scrollbar {
+  display: none;
 }
-
+li::-webkit-scrollbar {
+  display: none;
+}
 /* Handle on hover */
-ul::-webkit-scrollbar-thumb:hover {
-  background: #f0f1fa;
-}
+// ul::-webkit-scrollbar-thumb:hover {
+//   background: #f0f1fa;
+// }

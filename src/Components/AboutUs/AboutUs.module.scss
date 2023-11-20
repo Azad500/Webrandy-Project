@@ -40,10 +40,9 @@
         display: none;
       }
     }
-   
   }
   .imgBox {
-    video {
+    img {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
@@ -65,16 +64,15 @@
         justify-content: space-between;
         width: 100%;
       }
-      @include responsive992{
+      @include responsive992 {
         padding: 30px 0 20px 0;
-
       }
       .title {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
 
-        width: 309px;
+        width: 329px;
         overflow: hidden;
         text-overflow: ellipsis;
         font-family: Lexend;
@@ -89,7 +87,7 @@
           font-size: 2rem;
         }
       }
-      .rightButton{
+      .rightButton {
         display: none;
       }
     }
@@ -111,7 +109,6 @@
       @include responsive992 {
         font-size: 1rem;
       }
-    
     }
   }
 }
