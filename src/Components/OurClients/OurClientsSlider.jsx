@@ -1,7 +1,4 @@
 import styles from "./OurClientsSlider.module.scss";
-import AdressArch from "../../Images/OurClients/AdressArch.svg";
-import OkeanEmlak from "../../Images/OurClients/okeanEmlak.png";
-import WallIt from "../../Images/OurClients/wallIt.svg";
 
 import AllInformationsJS from "../../Informations";
 
