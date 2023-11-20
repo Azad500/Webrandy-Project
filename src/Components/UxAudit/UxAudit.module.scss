@@ -75,8 +75,7 @@
             display: flex;
             align-items: center;
             padding-top: 10px;
-          display: none;
-
+            display: none;
           }
           p {
             @include responsive992 {
@@ -171,7 +170,6 @@
           }
           @include responsive1740 {
             padding-bottom: 20px;
-
           }
         }
       }
@@ -225,7 +223,7 @@
     }
   }
   .detailedSearchMobileVersion {
-    display: flex;
+    display: none;
     justify-content: end;
     align-items: center;
     padding: 4px 16px 0 0;

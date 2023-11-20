@@ -22,15 +22,44 @@ section {
     .webrandyTextInFooter {
       display: none;
       @include responsive992 {
-        display: block;
+        display: flex;
+        align-items: center;
         cursor: pointer;
+        img {
+          width: 30px;
+          @include responsive992 {
+            width: 35px;
+          }
+          @include responsive1050 {
+            width: 35px;
+          }
+          @include responsive1270 {
+            width: 40px;
+          }
+          @include responsive1440 {
+            width: 50px;
+          }
+        }
         p {
           color: #f0f1fa;
           font-family: Krona One;
-          font-size: 36px;
+          font-size: 20px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          padding-left: 7px;
+          @include responsive992 {
+            padding-left: 10px;
+          }
+          @include responsive1050 {
+            font-size: 22px;
+          }
+          @include responsive1270 {
+            font-size: 30px;
+          }
+          @include responsive1440 {
+            font-size: 36px;
+          }
         }
       }
     }
@@ -92,13 +121,16 @@ section {
           border: none;
           background: #8d11cc;
           padding: 16px 24px;
-          color: #f0f1fa;
-          text-align: center;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
           line-height: 24px;
           cursor: pointer;
+          a {
+            text-decoration: none;
+            color: #f0f1fa;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+          }
         }
       }
     }
@@ -129,7 +161,7 @@ section {
         color: #f0f1fa;
         font-size: 20px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 140%;
         letter-spacing: 0.2px;
       }
@@ -186,6 +218,7 @@ section {
         letter-spacing: 0.2px;
         text-decoration: none;
         cursor: pointer;
+        text-align: start;
       }
     }
     .emailsAndPhonesElement {
@@ -212,10 +245,10 @@ section {
         }
         a:first-child {
           font-weight: 400;
+          margin-right: 18px;
         }
         a:last-child {
-          font-family: Aeonik TRIAL;
-          font-weight: 700;
+          font-weight: 400;
         }
       }
       .phonesElement {
@@ -235,6 +268,9 @@ section {
           line-height: 140%;
           letter-spacing: 0.2px;
           text-align: center;
+          @include responsive992 {
+            margin-right: 50px;
+          }
         }
       }
     }
@@ -438,6 +474,16 @@ section {
           font-weight: 400;
           line-height: 128%;
           letter-spacing: 0.2px;
+          text-align: start;
+          a {
+            text-decoration: none;
+            color: #f0f1fa;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 128%;
+            letter-spacing: 0.2px;
+          }
         }
       }
     }

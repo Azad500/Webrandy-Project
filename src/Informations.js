@@ -180,7 +180,7 @@ const AllInformationsJS = {
       {
         logoImg: OkeanEmlak,
         title: "Okean Əmlak",
-      }
+      },
     ],
   },
   AboutUsPart: {
@@ -284,19 +284,20 @@ const AllInformationsJS = {
     ButtonText: "Pulsuz konsultasiya",
     FirstEmail: "info@webrandy.com",
     SecondEmail: "office@webrandy.com",
-    FirstPhoneNumber: "+994 70 700 70 70",
-    SecondPhoneNumber: "+994 70 700 70 70",
-    ThirdPhoneNumber: "+994 70 700 70 70",
+    FirstPhoneNumber: "+994 51 777 57 70",
+    SecondPhoneNumber: "+994 50 223 57 20",
+    // ThirdPhoneNumber: "+994 70 700 70 70",
     Subscribe: "Abunə ol",
     InputEmail: "Email",
-    FooterFirstText: "Baku,Azerbaijan,AZ1001",
-    FooterSecondText: "Nizami st., 129e, AF Business House",
+    // FooterFirstText: "Baku,Azerbaijan,AZ1001",
+    FooterSecondText: "57 Üzeyir Hacıbəyov, Bakı 1095",
     Services: "Xidmətlər",
     Porfolio: "Portfolio",
     Team: "Komanda",
     Partners: "Partnyorlar",
     BlogInFooter: "Bloq",
     Contact: "Əlaqə",
+    AboutUs: "Haqqımızda",
   },
 };
 export default AllInformationsJS;

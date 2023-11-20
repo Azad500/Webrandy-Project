@@ -9,6 +9,9 @@ export default function NavbarForMobile({
   const handleClose = () => {
     setNavbarOpen(false);
   };
+  const handleCloseClick = () => {
+    handleClose();
+  };
   return (
     <div
       className={`${NavbarForMobileStyle.navbar} ${
@@ -19,23 +22,36 @@ export default function NavbarForMobile({
         <img onClick={handleClose} src={outIcon} alt="cross" />
         <div>
           <ul>
-            <li onClick={() => handleScrollClick("servicesRef")}>
-              {AllInformationsJS.NavbarPart.Services}
+            <li onClick={handleCloseClick}>
+              <p onClick={() => handleScrollClick("servicesRef")}>
+                {AllInformationsJS.NavbarPart.Services}
+              </p>
             </li>
             {/* <li onClick={() => handleScrollClick("portfolioRef")}>
               {AllInformationsJS.NavbarPart.Portfolio}
             </li> */}
-            <li onClick={() => handleScrollClick("teamRef")}>
-              {AllInformationsJS.NavbarPart.Team}
+            <li onClick={handleCloseClick}>
+              <p onClick={() => handleScrollClick("teamRef")}>
+                {AllInformationsJS.NavbarPart.Team}
+              </p>
             </li>
-            <li onClick={() => handleScrollClick("ourClientsRef")}>
-              {AllInformationsJS.NavbarPart.Partners}
+            <li onClick={handleCloseClick}>
+              <p onClick={() => handleScrollClick("ourClientsRef")}>
+                {AllInformationsJS.NavbarPart.Partners}
+              </p>
+            </li>
+            <li onClick={handleCloseClick}>
+              <p onClick={() => handleScrollClick("aboutUsRef")}>
+                {AllInformationsJS.FooterPart.AboutUs}
+              </p>
             </li>
             {/* <li onClick={() => handleScrollClick("blogRef")}>
               {AllInformationsJS.NavbarPart.Blog}
             </li> */}
-            <li target="_blank" href="https://wa.me/994503679899">
-              {AllInformationsJS.NavbarPart.Contact}
+            <li onClick={handleCloseClick}>
+              <a target="_blank" href="https://wa.me/994517775770">
+                {AllInformationsJS.NavbarPart.Contact}
+              </a>
             </li>
           </ul>
         </div>

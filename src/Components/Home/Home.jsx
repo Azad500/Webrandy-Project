@@ -40,7 +40,9 @@ export default function Home() {
       <img src={currentImg} alt="" />
       <div className={HomeStyle.homeDescription}>
         <p>{AllInformationsJS.HomePart.HomeDesc}</p>
-        <a href="">{AllInformationsJS.HomePart.ButtonDesc}</a>
+        <a target="_blank" href="https://wa.me/994517775770">
+          {AllInformationsJS.HomePart.ButtonDesc}
+        </a>
       </div>
     </div>
   );

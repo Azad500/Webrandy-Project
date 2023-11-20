@@ -20,6 +20,14 @@
     padding: 24px 28px;
   }
   div {
+    display: flex;
+    align-items: center;
+    img {
+      width: 30px;
+      @include responsive992 {
+        width: 50px;
+      }
+    }
     h1 {
       font-family: "Krona One", sans-serif;
       font-weight: 400;
@@ -27,13 +35,15 @@
       font-style: normal;
       line-height: normal;
       cursor: pointer;
+      padding-left: 7px;
       @include responsive992 {
         font-size: 2rem;
+        padding-left: 10px;
       }
     }
     .barMenu {
       color: white;
-      @include responsive992 {
+      @include responsive728 {
         display: none;
       }
     }
@@ -49,11 +59,14 @@
       a {
         color: #f0f1fa;
         text-decoration: none;
-        font-size: 1.25rem;
+        font-size: 0.875rem;
         cursor: pointer;
+        @include responsive992 {
+          font-size: 1.25rem;
+        }
       }
     }
-    @include responsive992 {
+    @include responsive728 {
       display: flex;
     }
   }

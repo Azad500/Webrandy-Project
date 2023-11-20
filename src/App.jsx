@@ -29,6 +29,7 @@ function App() {
     teamRef: useRef(null),
     blogRef: useRef(null),
     footerRef: useRef(null),
+    contactRef: useRef(null),
   };
 
   const handleScrollClick = (refName) => {
@@ -51,7 +52,7 @@ function App() {
         <UxAudit />
         {/* <Portfolio portfolioRef={refs.portfolioRef} /> */}
         <OurClients ourClientsRef={refs.ourClientsRef} />
-        <AboutUs />
+        <AboutUs aboutUsRef={refs.aboutUsRef} />
         <Team teamRef={refs.teamRef} />
         {/* <Blog blogRef={refs.blogRef} /> */}
         <Footer

@@ -18,6 +18,16 @@
     @content;
   }
 }
+@mixin responsive1050 {
+  @media (min-width: 1050px) {
+    @content;
+  }
+}
+@mixin responsive1270 {
+  @media (min-width: 1270px) {
+    @content;
+  }
+}
 @mixin responsive1200 {
   @media (min-width: 1200px) {
     @content;

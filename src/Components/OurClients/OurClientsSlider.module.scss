@@ -1,34 +1,36 @@
 @import "../../Scss/Responsive\ measure/measure";
 
-.logoContainer::-webkit-scrollbar {
+.upSliderContainer::-webkit-scrollbar {
+  display: none;
+}
+.downSliderContainer::-webkit-scrollbar {
   display: none;
 }
 
 .logoContainer {
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   padding-top: 45px;
   padding-bottom: 35px;
-
   @include responsive728 {
     padding-top: 0;
     padding-bottom: 64px;
   }
-
   .upSliderContainer,
   .downSliderContainer {
     display: flex;
-
+    overflow: scroll;
     .upSlider,
     .downSlider {
       display: flex;
       gap: 16px;
-      margin-left: 40px;
-      margin-right: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
       height: 60px;
+      justify-content: flex-start;
       align-items: center;
       scrollbar-width: none;
-      animation: 1.5s slide infinite linear;
+      animation: 5s slide infinite linear;
 
       @keyframes slide {
         from {
@@ -38,8 +40,8 @@
           transform: translateX(-100%);
         }
       }
-
       p {
+        width: 140px;
         color: #8e8e8e;
         font-family: Lexend;
         font-size: 1.25rem;
@@ -52,12 +54,12 @@
 
   .downSliderContainer {
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
 
     .downSlider {
       height: 80px;
-      animation: 1.5s slider infinite linear;
+      animation: 5s slider infinite linear;
 
       @keyframes slider {
         from {

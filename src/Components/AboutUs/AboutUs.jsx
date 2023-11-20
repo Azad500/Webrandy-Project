@@ -2,22 +2,37 @@ import AllInformationsJS from "../../Informations";
 import rightButton from "../../Images/Services/rightButton.svg";
 import AboutUsStyle from "../AboutUs/AboutUs.module.scss";
 import { useEffect, useRef } from "react";
-export default function AboutUs() {
+export default function AboutUs({ aboutUsRef }) {
   const videoEl = useRef(null);
 
   const attemptPlay = () => {
-    videoEl &&
-      videoEl.current &&
-      videoEl.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
+    if (videoEl && videoEl.current) {
+      const video = videoEl.current;
+      if (video.play) {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {})
+            .catch((error) => {
+              console.error("Error attempting to play", error);
+            });
+        }
+      }
+    }
+  };
+
+  const handleUserInteraction = () => {
+    attemptPlay();
   };
 
   useEffect(() => {
-    attemptPlay();
+    document.addEventListener("click", handleUserInteraction);
+    return () => {
+      document.removeEventListener("click", handleUserInteraction);
+    };
   }, []);
   return (
-    <section className={AboutUsStyle.AboutUsSection}>
+    <section ref={aboutUsRef} className={AboutUsStyle.AboutUsSection}>
       <div className={AboutUsStyle.headerBox}>
         <h2>{AllInformationsJS.AboutUsPart.partName}</h2>
         <p>

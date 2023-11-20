@@ -3,7 +3,7 @@ import AllInformationsJS from "../../Informations";
 import UxAuditImage from "../../Images/UxAudit/UxAuditImage.png";
 import Arrow from "../../Images/UxAudit/arrow.png";
 
-export default function UxAudit({ uxAuditRef }) {
+export default function UxAudit() {
   return (
     <div className={styles.container}>
       <div className={styles.uxAuditTextMobileVersion}>

@@ -6,7 +6,6 @@
 .home {
   position: relative;
   top: 0;
-  z-index: -1;
   width: 100%;
 
   img {
@@ -54,6 +53,7 @@
       }
     }
     a {
+      cursor: pointer;
       text-decoration: none;
       padding: 12px 16px;
       border-radius: 8px;

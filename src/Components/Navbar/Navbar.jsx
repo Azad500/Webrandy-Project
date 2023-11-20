@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavbarStyle from "../Navbar/Navbar.module.scss";
+import NavbarImage from "../../Images/Navbar/NavbarImage.png";
 import AllInformationsJS from "../../Informations";
 import NavbarForMobile from "./NavbarForMobile";
 export default function Navbar({
@@ -21,6 +22,7 @@ export default function Navbar({
         }`}
       >
         <div>
+          <img src={NavbarImage} alt="" />
           <h1 ref={navbarRef} onClick={refreshPage}>
             {AllInformationsJS.SameParts.Webrandy}
           </h1>
@@ -54,13 +56,18 @@ export default function Navbar({
                 {AllInformationsJS.NavbarPart.Partners}
               </a>
             </li>
+            <li>
+              <a onClick={() => handleScrollClick("aboutUsRef")}>
+                {AllInformationsJS.FooterPart.AboutUs}
+              </a>
+            </li>
             {/* <li>
               <a onClick={() => handleScrollClick("blogRef")}>
                 {AllInformationsJS.NavbarPart.Blog}
               </a>
             </li> */}
             <li>
-              <a target="_blank" href="https://wa.me/994503679899">
+              <a target="_blank" href="https://wa.me/994517775770">
                 {AllInformationsJS.NavbarPart.Contact}
               </a>
             </li>
