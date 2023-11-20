@@ -11,7 +11,7 @@ import MahirTağıyev from "../src/Images/TeamImage/MahirTağıyev.png";
 import Səidİsaoğlu from "../src/Images/TeamImage/Səidİsaoğlu.png";
 import TarlanMovlamov from "../src/Images/TeamImage/TarlanMovlamov.png";
 import SitaraNasirova from "../src/Images/TeamImage/SitaraNasirova.png";
-import AdressArch from "../src/Images/OurClients/AdressArch.svg";
+import AdressArch from "../src/Images/OurClients/adressArch.svg";
 import OkeanEmlak from "../src/Images/OurClients/okeanEmlak.png";
 import WallIt from "../src/Images/OurClients/wallIt.svg";
 import AdressArchClient from "./Images/OurClients/AdressArchClient.png";
