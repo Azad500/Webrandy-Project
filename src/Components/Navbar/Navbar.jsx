@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faL } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavbarStyle from "../Navbar/Navbar.module.scss";
 import AllInformationsJS from "../../Informations";
 import NavbarForMobile from "./NavbarForMobile";
@@ -39,11 +39,11 @@ export default function Navbar({
                 {AllInformationsJS.NavbarPart.Services}
               </a>
             </li>
-            <li>
+            {/* <li>
               <a onClick={() => handleScrollClick("portfolioRef")}>
                 {AllInformationsJS.NavbarPart.Portfolio}
               </a>
-            </li>
+            </li> */}
             <li>
               <a onClick={() => handleScrollClick("teamRef")}>
                 {AllInformationsJS.NavbarPart.Team}
@@ -54,13 +54,13 @@ export default function Navbar({
                 {AllInformationsJS.NavbarPart.Partners}
               </a>
             </li>
-            <li>
+            {/* <li>
               <a onClick={() => handleScrollClick("blogRef")}>
                 {AllInformationsJS.NavbarPart.Blog}
               </a>
-            </li>
+            </li> */}
             <li>
-              <a onClick={() => handleScrollClick("footerRef")}>
+              <a target="_blank" href="https://wa.me/994503679899">
                 {AllInformationsJS.NavbarPart.Contact}
               </a>
             </li>

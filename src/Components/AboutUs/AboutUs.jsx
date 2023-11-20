@@ -1,8 +1,21 @@
 import AllInformationsJS from "../../Informations";
 import rightButton from "../../Images/Services/rightButton.svg";
 import AboutUsStyle from "../AboutUs/AboutUs.module.scss";
-import AboutUsImg from "../../Images/AboutUs/AboutUsImg.jpeg";
+import { useEffect, useRef } from "react";
 export default function AboutUs() {
+  const videoEl = useRef(null);
+
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error) => {
+        console.error("Error attempting to play", error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
   return (
     <section className={AboutUsStyle.AboutUsSection}>
       <div className={AboutUsStyle.headerBox}>
@@ -13,14 +26,20 @@ export default function AboutUs() {
         </p>
       </div>
       <div className={AboutUsStyle.imgBox}>
-        <img src={AboutUsImg} alt="" />
+        <video
+          loop
+          ref={videoEl}
+          autoPlay
+          src={AllInformationsJS.AboutUsPart.img}
+          alt=""
+        />
       </div>
       <div className={AboutUsStyle.description}>
         <div className={AboutUsStyle.head}>
           <p className={AboutUsStyle.title}>
             {AllInformationsJS.AboutUsPart.FirstText}
           </p>
-          <p>
+          <p className={AboutUsStyle.rightButton}>
             {AllInformationsJS.SameParts.DetailedSearch}{" "}
             <img src={rightButton} />
           </p>

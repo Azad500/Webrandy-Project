@@ -33,16 +33,17 @@
       }
     }
     p {
-      display: flex;
+      display: none;
       align-items: center;
       gap: 10px;
       @include responsive728 {
         display: none;
       }
     }
+   
   }
   .imgBox {
-    img {
+    video {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
@@ -88,6 +89,9 @@
           font-size: 2rem;
         }
       }
+      .rightButton{
+        display: none;
+      }
     }
     .description {
       padding-top: 12px;
@@ -107,6 +111,7 @@
       @include responsive992 {
         font-size: 1rem;
       }
+    
     }
   }
 }

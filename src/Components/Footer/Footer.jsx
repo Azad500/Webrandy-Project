@@ -21,19 +21,19 @@ export default function Footer({ footerRef, handleScrollClick }) {
             <a onClick={() => handleScrollClick("servicesRef")}>
               {AllInformationsJS.FooterPart.Services}
             </a>
-            <a onClick={() => handleScrollClick("portfolioRef")}>
+            {/* <a onClick={() => handleScrollClick("portfolioRef")}>
               {AllInformationsJS.FooterPart.Porfolio}
-            </a>
+            </a> */}
             <a onClick={() => handleScrollClick("teamRef")}>
               {AllInformationsJS.FooterPart.Team}
             </a>
             <a onClick={() => handleScrollClick("ourClientsRef")}>
               {AllInformationsJS.FooterPart.Partners}
             </a>
-            <a onClick={() => handleScrollClick("blogRef")}>
+            {/* <a onClick={() => handleScrollClick("blogRef")}>
               {AllInformationsJS.FooterPart.BlogInFooter}
-            </a>
-            <a onClick={() => handleScrollClick("footerRef")}>
+            </a> */}
+            <a target="_blank" href="https://wa.me/994503679899">
               {AllInformationsJS.FooterPart.Contact}
             </a>
           </div>
@@ -54,18 +54,18 @@ export default function Footer({ footerRef, handleScrollClick }) {
           <a onClick={() => handleScrollClick("servicesRef")}>
             {AllInformationsJS.FooterPart.Services}
           </a>
-          <a onClick={() => handleScrollClick("portfolioRef")}>
+          {/* <a onClick={() => handleScrollClick("portfolioRef")}>
             {AllInformationsJS.FooterPart.Porfolio}
-          </a>
+          </a> */}
           <a onClick={() => handleScrollClick("teamRef")}>
             {AllInformationsJS.FooterPart.Team}
           </a>
           <a onClick={() => handleScrollClick("ourClientsRef")}>
             {AllInformationsJS.FooterPart.Partners}
           </a>
-          <a onClick={() => handleScrollClick("blogRef")}>
+          {/* <a onClick={() => handleScrollClick("blogRef")}>
             {AllInformationsJS.FooterPart.BlogInFooter}
-          </a>
+          </a> */}
         </div>
         <div className={styles.emailsAndPhonesElement}>
           <div className={styles.emailsContainer}>

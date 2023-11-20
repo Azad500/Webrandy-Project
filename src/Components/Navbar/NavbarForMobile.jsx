@@ -22,19 +22,19 @@ export default function NavbarForMobile({
             <li onClick={() => handleScrollClick("servicesRef")}>
               {AllInformationsJS.NavbarPart.Services}
             </li>
-            <li onClick={() => handleScrollClick("portfolioRef")}>
+            {/* <li onClick={() => handleScrollClick("portfolioRef")}>
               {AllInformationsJS.NavbarPart.Portfolio}
-            </li>
+            </li> */}
             <li onClick={() => handleScrollClick("teamRef")}>
               {AllInformationsJS.NavbarPart.Team}
             </li>
             <li onClick={() => handleScrollClick("ourClientsRef")}>
               {AllInformationsJS.NavbarPart.Partners}
             </li>
-            <li onClick={() => handleScrollClick("blogRef")}>
+            {/* <li onClick={() => handleScrollClick("blogRef")}>
               {AllInformationsJS.NavbarPart.Blog}
-            </li>
-            <li onClick={() => handleScrollClick("footerRef")}>
+            </li> */}
+            <li target="_blank" href="https://wa.me/994503679899">
               {AllInformationsJS.NavbarPart.Contact}
             </li>
           </ul>

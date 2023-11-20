@@ -1,8 +1,23 @@
-import uxAuditJPG from "../src/Images/Services/ux-audit.jpg";
-import webProjectJPG from "../src/Images/Services/servicesImg.png";
-import mobileAppJPG from "../src/Images/Services/mobileAppImg.jpg";
-import BrandingImgJPG from "../src/Images/Services/brandingImg.jpg";
-import Client3Img from "./Images/OurClients/client3Img.jpeg";
+import uxAuditPurpleJPG from "../src/Images/Services/uxauditpurple.png";
+import webProjectJPG from "../src/Images/Services/webProject.png";
+import designJPG from "../src/Images/Services/design.png";
+import researchingJPG from "../src/Images/Services/researching.png";
+import mobileAppJPG from "../src/Images/Services/mobileApp.png";
+import BrandingImgJPG from "../src/Images/Services/branding.png";
+import AboutUsImg from "../src/Images/AboutUs/AboutUs.mp4";
+import AzadMirzəzadə from "../src/Images/TeamImage/AzadMirzəzadə.png";
+import FidanMuradova from "../src/Images/TeamImage/FidanMuradova.png";
+import MahirTağıyev from "../src/Images/TeamImage/MahirTağıyev.png";
+import Səidİsaoğlu from "../src/Images/TeamImage/Səidİsaoğlu.png";
+import TarlanMovlamov from "../src/Images/TeamImage/TarlanMovlamov.png";
+import SitaraNasirova from "../src/Images/TeamImage/SitaraNasirova.png";
+import AdressArch from "../src/Images/OurClients/AdressArch.svg";
+import OkeanEmlak from "../src/Images/OurClients/okeanEmlak.png";
+import WallIt from "../src/Images/OurClients/wallIt.svg";
+import AdressArchClient from "./Images/OurClients/AdressArchClient.png";
+import Client2 from "./Images/OurClients/Client2.png";
+import Client3 from "./Images/OurClients/Client3.png";
+
 import companyLogo1 from "./Images/OurClients/companyLogo.png";
 
 const AllInformationsJS = {
@@ -36,38 +51,38 @@ const AllInformationsJS = {
       {
         category: "Web Layihələr",
         img: webProjectJPG,
-        desc: " Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source  ",
-        hashtag: ["UX Design", "UX Research", "UX/UI Design"],
+        desc: " Veb saytınızın istifadəçi dostu olub olmadığını düşünürsünüz? Mövcud veb layihələrinizi təhlil edərək istifadəçi təcrübənizi təkmilləşdirməyin yollarını tapmaqda sizə kömək edirik. Komandamız saytınızın istifadəçi dostu olmasını, qarşılıqlı əlaqə dizaynlarını və əlçatanlıq standartlarını nəzərdən keçirir. Biz sizə aydın rəy və strateji tövsiyələr təqdim etməklə rəqəmsal varlığınızı gücləndirməyə kömək edirik. ",
+        hashtag: ["Web", "UX Design", "UI Design"],
       },
       {
         category: "UX Audit",
-        img: uxAuditJPG,
-        desc: "  to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source  ",
+        img: uxAuditPurpleJPG,
+        desc: "  Veb saytınızın istifadəçi dostu olub olmadığını düşünürsünüz? Mövcud veb layihələrinizi təhlil edərək istifadəçi təcrübənizi təkmilləşdirməyin yollarını tapmaqda sizə kömək edirik. Komandamız saytınızın istifadəçi dostu olmasını, qarşılıqlı əlaqə dizaynlarını və əlçatanlıq standartlarını nəzərdən keçirir. Biz sizə aydın rəy və strateji tövsiyələr təqdim etməklə rəqəmsal varlığınızı gücləndirməyə kömək edirik.",
         hashtag: ["UX Design", "UX Research", "UX/UI Design"],
       },
       {
         category: "Mobile App",
         img: mobileAppJPG,
-        desc: " popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source  ",
-        hashtag: ["UX Design", "UX Research", "UX/UI Design"],
+        desc: " Təcrübəli komandamız həm estetik, həm də istifadəçi dostu olan mobil proqramlar hazırlayaraq istifadəçilərinizlə daha dərin əlaqə yaratmağınıza kömək edir. UX yönümlü yanaşmamız hər mərhələdə istifadəçi məmnuniyyətini nəzərə alaraq mobil təcrübənizi gücləndirir. Xüsusi hazırlanmış tətbiqlərimizlə mobil dünyada fərqlənin və istifadəçilərinizə unudulmaz rəqəmsal səyahət təklif edin!  ",
+        hashtag: ["Mobile app", "UX Research", "UI Design"],
       },
       {
         category: "Branding",
         img: BrandingImgJPG,
-        desc: "   belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source  ",
-        hashtag: ["UX Design", "UX Research", "UX/UI Design"],
+        desc: "   Mütəxəssis komandamız brendinizin əsas dəyərlərini başa düşmək və vurğulamaq üçün strateji yanaşma ilə unikal brend şəxsiyyəti yaratmağınıza kömək edir. Güclü vizual və kommunikasiya elementləri ilə brendinizin rəqəmsal dünyada qalıcı iz qoymasını təmin edirik. Rəqibləriniz arasında seçilən və müştəriləriniz tərəfindən tanınan brend yaratmaq üçün bizimlə işləyin.  ",
+        hashtag: ["Branging", "UX Research", "Logo"],
       },
       {
         category: "Design",
-        img: webProjectJPG,
-        desc: " Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source  ",
-        hashtag: ["UX Design", "UX Research", "UX/UI Design"],
+        img: designJPG,
+        desc: " Biz sizin biznesinizi gözəl və istifadəçi üçün rahat şəkildə vizuallaşdırırıq! Təcrübəli komandamızla birlikdə brendinizi ən yaxşı şəkildə əks etdirən sadə və təsir edici dizaynlar təklif edirik. Qrafikdən istifadəçi interfeysinə qədər hər mərhələdə sizin üçün xüsusi həllər hazırlayırıq. Bizimlə işləyərək biznesinizi vizual olaraq gücləndirməyin asanlığını yaşayın! ",
+        hashtag: ["Qrafik Dizayn", "SMM Posts", "Logo"],
       },
       {
         category: "Researching",
-        img: mobileAppJPG,
-        desc: " Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source  ",
-        hashtag: ["UX Design", "UX Research", "UX/UI Design"],
+        img: researchingJPG,
+        desc: " Biz Strateji və Hərtərəfli Həllər Təklif edirik! Təcrübəli tədqiqat komandamız sənaye tendensiyalarını və müştəri gözləntilərini hərtərəfli təhlil edərək biznesinizə xas həllər hazırlayır. Hərtərəfli bazar araşdırması və rəqabət təhlili ilə sizi rəqiblərinizdən fərqləndirmək üçün strategiyalar müəyyənləşdiririk. Bizimlə işləyərək, əsaslandırılmış qərarlar qəbul etməyin üstünlüyünü yaşayın və biznesinizi daha effektiv idarə edin!  ",
+        hashtag: ["Research", "Wireframe", "UX Design"],
       },
     ],
   },
@@ -75,121 +90,117 @@ const AllInformationsJS = {
     OurClientsTextInHeader: "Our Clients",
     ClientData: [
       {
-        img: Client3Img,
-        name: "Client1",
-        surname: "Surname",
-        desc: "“Prosofly” şirkətinin əməkdaşları layihənin icrasına daim diqqət və qayğı ilə yanaşır, öz innovativ təcrübələrini tətbiq edərək platformanın optimal işləməsini təmin edirlər.",
+        img: AdressArchClient,
+        name: "Fərhad ",
+        surname: "Abbasov",
+        desc: "“Webrandy” komandası ilə işləmək həqiqətən möhtəşəmdir. Brief-i aldıqdan sonra gerisi onlardadır. Hər şeyi çox keyfiyyətli və gözoxşuyan şəkildə təhvil verdilər. Möhtəşəm!!!",
       },
       {
-        img: Client3Img,
-        name: "Client2",
-        surname: "Surname",
-        desc: "“Prosofly” şirkətinin əməkdaşları layihənin icrasına daim diqqət və qayğı ilə yanaşır, öz innovativ təcrübələrini tətbiq edərək platformanın optimal işləməsini təmin edirlər.",
+        img: Client2,
+        name: "Adress ",
+        surname: "Arch",
+        desc: "“Webrandy” tək kəliməylə möhtəşəmdilər. Enerjiləri, pozitivliyi çox əladır. Onlarla işləməkdən həqiqətən zövq aldım. ",
       },
       {
-        img: Client3Img,
-        name: "Client3",
-        surname: "Surname",
-        desc: "“Prosofly” şirkətinin əməkdaşları layihənin icrasına daim diqqət və qayğı ilə yanaşır, öz innovativ təcrübələrini tətbiq edərək platformanın optimal işləməsini təmin edirlər.",
+        img: Client3,
+        name: "Wall - IT",
+        // surname: "Surname",
+        desc: "“Webrandy” şirkətinin əməkdaşları layihənin icrasına daim diqqət və qayğı ilə yanaşır, öz innovativ təcrübələrini tətbiq edərək mükəmməl dizayn ərsəyə gətirirlər.",
       },
     ],
-    CompanyName: [
+    CompanyData: [
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: AdressArch,
+        title: "AdressArch",
       },
       {
-        logoImg: companyLogo1,
-        title: "Pasa",
+        logoImg: WallIt,
+        title: "Wall - IT",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: OkeanEmlak,
+        title: "Okean Əmlak",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: AdressArch,
+        title: "AdressArch",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: WallIt,
+        title: "Wall - IT",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: OkeanEmlak,
+        title: "Okean Əmlak",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: AdressArch,
+        title: "AdressArch",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: WallIt,
+        title: "Wall - IT",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: OkeanEmlak,
+        title: "Okean Əmlak",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: AdressArch,
+        title: "AdressArch",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: WallIt,
+        title: "Wall - IT",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: OkeanEmlak,
+        title: "Okean Əmlak",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: AdressArch,
+        title: "AdressArch",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: WallIt,
+        title: "Wall - IT",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: OkeanEmlak,
+        title: "Okean Əmlak",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: AdressArch,
+        title: "AdressArch",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
+        logoImg: WallIt,
+        title: "Wall - IT",
       },
       {
-        logoImg: companyLogo1,
-        title: "Webrandy",
-      },
-      {
-        logoImg: companyLogo1,
-        title: "Webrandy",
-      },
+        logoImg: OkeanEmlak,
+        title: "Okean Əmlak",
+      }
     ],
   },
   AboutUsPart: {
     partName: "Haqqımızda",
-    FirstText:
-      "Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur etviverra habitasse. Lorem ipsum dolor sit amet consectetur Cras",
+    img: AboutUsImg,
+    FirstText: "Webrandy team",
     SecondText:
-      "Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur et viverra habitasse. Felis ut ipsum viverra faucibus risus suscipit. Amet tincidunt iaculis eu eget imperdiet aliquam fermentum augue enim.Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur et viverra habitasse. Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur et viverra habitasse. Felis ut ipsum viverra faucibus risus suscipit. Amet tincidunt iaculis eu eget imperdiet aliquam fermentum augue enim.Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur et viverra habitasse.",
+      "Biz, Webrandy komandası olaraq istifadəçi təcrübəsi  (UX), qrafik dizayn, veb və mobil proqramlaşdırma və brendinq üzrə ixtisaslaşmışıq. Layihələrimizdə təkcə bacarıqlarımızı deyil, həm də sevgimizi ortaya qoyuruq. Müştərilərimizin vizyonunu reallığa çevirmək əzmimizlə hər bir layihədə brendlərin sərhədlərini yenidən müəyyənləşdiririk. İstifadəçilər üçün ən əlçatan məhsullar hazırlayırıq. Webrandy komandası olaraq biz burada təkcə bizneslə məşğul olmaq üçün deyil, rəqəmsal sənət əsərləri yaratmaq üçün də buradayıq. Təcrübəli və bacarıqlı dizaynerlərimiz sənət əsərlərini, araşdırmaçılarımızın istifadəçiləri və hədəf kütləsini araşdırmalarına uyğun şəkildə dizayn edir. Veb layihələri isə bu dizayn nümunələri əsasında proqramçılarımız hazırlayıb təhvil verirlər.",
   },
 
   UxAuditPart: {
     UxAuditHeader: "UX Audit",
     UxAuditText:
-      "Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur et viverra habitasse. Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. Eros sagittis enim amet nunc nascetur et viverra habitasse. Lorem ipsum dolor sit amet consectetur. Cras aliquet arcu feugiat vulputate ut risus morbi. ",
-    UXButton1: "buttonOne",
-    UXButton2: "buttonTwo",
-    UXButton3: "buttonThree",
-    UXButton4: "buttonFour",
-    UXButton5: "buttonFive",
-    UXButton6: "buttonSix",
+      "Veb saytınızın istifadəçi dostu olub olmadığını düşünürsünüz? Mövcud veb layihələrinizi təhlil edərək istifadəçi təcrübənizi təkmilləşdirməyin yollarını tapmaqda sizə kömək edirik. Komandamız saytınızın istifadəçi dostu olmasını, qarşılıqlı əlaqə dizaynlarını və əlçatanlıq standartlarını nəzərdən keçirir. Biz sizə aydın rəy və strateji tövsiyələr təqdim etməklə rəqəmsal varlığınızı gücləndirməyə kömək edirik. ",
+    UXButton1: "UX Design",
+    UXButton2: "Ux Research",
+    UXButton3: "UX/UI Design",
+    UXButton4: "Research",
+    UXButton5: "Audit",
+    UXButton6: "UI  Design",
   },
   PortfolioPart: {
     PortfolioText: "Portfolio",
@@ -203,6 +214,65 @@ const AllInformationsJS = {
   },
   TeamPart: {
     TeamText: "Team",
+    teamMates: [
+      {
+        Img: AzadMirzəzadə,
+        FullName: "Azad Mirzazada",
+        Position: "Front-End Developer",
+        Instagram: "https://www.instagram.com/azad.mirzazada/",
+        Facebook: "2",
+        LinkEdin: "3",
+        TikTok: "4",
+      },
+      {
+        Img: Səidİsaoğlu,
+
+        FullName: "Səid İsaoğlu",
+        Position: "Front-End Developer",
+        Instagram: "https://www.instagram.com/saidisaoglu/",
+        Facebook: "22",
+        LinkEdin: "33",
+        TikTok: "44",
+      },
+      {
+        Img: TarlanMovlamov,
+        FullName: "Tərlan Mövlamov",
+        Position: "Co-Founder & CEO",
+        Instagram: "111",
+        Facebook: "222",
+        LinkEdin: "333",
+        TikTok: "444",
+      },
+      {
+        Img: SitaraNasirova,
+
+        FullName: "Sitarə Nasirova",
+        Position: "Co-Founder & SMM",
+        Instagram: "1111",
+        Facebook: "2222",
+        LinkEdin: "3333",
+        TikTok: "4444",
+      },
+      {
+        Img: FidanMuradova,
+
+        FullName: "Fidan Muradova",
+        Position: "UX/Uİ Designer",
+        Instagram: "11111",
+        Facebook: "22222",
+        LinkEdin: "33333",
+        TikTok: "44444",
+      },
+      {
+        Img: MahirTağıyev,
+        FullName: "Mahir Tağıyev",
+        Position: "UX/Uİ Designer",
+        Instagram: "11111",
+        Facebook: "22222",
+        LinkEdin: "33333",
+        TikTok: "44444",
+      },
+    ],
   },
   BlogPart: {
     BlogText: "Bloq",

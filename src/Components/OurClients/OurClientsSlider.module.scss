@@ -1,17 +1,35 @@
+@import "../../Scss/Responsive\ measure/measure";
+
 .logoContainer::-webkit-scrollbar {
   display: none;
 }
+
 .logoContainer {
-  .upSliderContainer {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 45px;
+  padding-bottom: 35px;
+
+  @include responsive728 {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+  .upSliderContainer,
+  .downSliderContainer {
     display: flex;
-    .upSlider {
+
+    .upSlider,
+    .downSlider {
       display: flex;
-      padding-right: 180px;
+      gap: 16px;
+      margin-left: 40px;
+      margin-right: 40px;
       height: 60px;
       align-items: center;
-      overflow-x: scroll;
       scrollbar-width: none;
       animation: 1.5s slide infinite linear;
+
       @keyframes slide {
         from {
           transform: translateX(0);
@@ -20,22 +38,27 @@
           transform: translateX(-100%);
         }
       }
+
       p {
-        color: white;
-        padding-left: 16px;
+        color: #8e8e8e;
+        font-family: Lexend;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
       }
     }
   }
+
   .downSliderContainer {
+    width: 100%;
+    overflow: hidden;
     display: flex;
+
     .downSlider {
-      display: flex;
-      padding-right: 180px;
       height: 80px;
-      align-items: center;
-      overflow-x: scroll;
-      scrollbar-width: none;
       animation: 1.5s slider infinite linear;
+
       @keyframes slider {
         from {
           transform: translateX(-100%);
@@ -44,10 +67,62 @@
           transform: translateX(0);
         }
       }
-      p {
-        color: white;
-        padding-left: 16px;
-      }
     }
   }
 }
+// .logoContainer::-webkit-scrollbar {
+//   display: none;
+// }
+// .downSlider::-webkit-scrollbar {
+//   display: none;
+// }
+// .logoContainer {
+//   overflow-x: scroll;
+
+//   .upSliderContainer {
+//     display: flex;
+//     .upSlider {
+//       display: flex;
+//       padding-right: 40px;
+//       height: 60px;
+//       align-items: center;
+//       scrollbar-width: none;
+//       animation: 1.5s slide infinite linear;
+//       @keyframes slide {
+//         from {
+//           transform: translateX(0);
+//         }
+//         to {
+//           transform: translateX(-100%);
+//         }
+//       }
+//       p {
+//         color: white;
+//         padding-left: 16px;
+//       }
+//     }
+//   }
+//   .downSliderContainer {
+//     display: flex;
+//     .downSlider {
+//       display: flex;
+//       padding-right: 180px;
+//       height: 80px;
+//       align-items: center;
+//       scrollbar-width: none;
+//       animation: 1.5s slider infinite linear;
+//       @keyframes slider {
+//         from {
+//           transform: translateX(-100%);
+//         }
+//         to {
+//           transform: translateX(0);
+//         }
+//       }
+//       p {
+//         color: white;
+//         padding-left: 16px;
+//       }
+//     }
+//   }
+// }

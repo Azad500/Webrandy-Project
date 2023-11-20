@@ -127,7 +127,10 @@
         }
         @include responsive992 {
           width: 188px;
-          right: -80px;
+          right: -1.7%;
+        }
+        @include responsive1400{
+          right: -6.3%;
         }
       }
       .card {
@@ -193,104 +196,4 @@
     }
   }
 
-  .flowingTextContainer {
-    width: 100%;
-    background-color: #000;
-    color: #8e8e8e;
-    padding: 80px 0;
-    .wrapper {
-      transform-origin: top left;
-      display: flex;
-      overflow: hidden;
-      gap: 10px;
-      width: 100%;
-    }
-
-    .wrapper:first-child {
-      margin-bottom: 1em;
-    }
-
-    .rotate1 {
-      width: 100%;
-
-      display: flex;
-      gap: 24px;
-      animation: flowing 27s linear infinite;
-      Span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 200px;
-      }
-      &:hover {
-        animation-play-state: paused;
-      }
-    }
-    // .rotate2 {
-    //   display: flex;
-    //   gap: 1rem;
-    //   animation: flowing1 20s linear infinite;
-    //   animation-delay: 8s;
-    //   padding: 0 10px;
-    // }
-    .rotate3 {
-      width: 100%;
-
-      display: flex;
-      gap: 24px;
-      animation: flowing-back 30s linear infinite;
-      Span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 200px;
-      }
-      &:hover {
-        animation-play-state: paused;
-      }
-    }
-    // .rotate4 {
-    //   display: flex;
-    //   gap: 1em;
-    //   animation: flowing-back1 20s linear infinite;
-    //   animation-delay: 10s;
-    // }
-  }
 }
-@keyframes flowing {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-// @keyframes flowing1 {
-//   from {
-//     transform: translateX(0%);
-//   }
-//   to {
-//     transform: translateX(-200%);
-//   }
-// }
-
-@keyframes flowing-back {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-// @keyframes flowing-back1 {
-//   from {
-//     transform: translateX(-200%);
-//   }
-//   to {
-//     transform: translateX(0%);
-//   }
-// }

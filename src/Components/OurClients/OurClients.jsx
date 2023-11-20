@@ -44,6 +44,7 @@ export default function OurClients({ ourClientsRef }) {
           </div>
         </div>
       </div>
+      <OurClientsSlider/>
     </section>
   );
 }

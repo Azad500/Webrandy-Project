@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import AllInformationsJS from "../../Informations";
 import ServicesStyle from "../Services/Services.module.scss";
-import ServicesImg from "../../Images/Services/ServicesImg.png";
 import rightButton from "../../Images/Services/rightButton.svg";
-import uxAudit from "../../Images/Services/ux-audit.jpg";
 
 export default function Services({ servicesRef }) {
   const [selectedCategory, setSelectedCategory] = useState(null);

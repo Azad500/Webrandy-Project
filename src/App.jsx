@@ -10,7 +10,6 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Team from "./Components/Team/Team";
 import Blog from "./Components/Blog/Blog";
 import Footer from "./Components/Footer/Footer";
-import OurClientsSlider from "./Components/OurClients/OurClientsSlider";
 
 function App() {
   const refreshPage = () => {
@@ -50,12 +49,11 @@ function App() {
       <main>
         <Services servicesRef={refs.servicesRef} />
         <UxAudit />
-        <Portfolio portfolioRef={refs.portfolioRef} />
+        {/* <Portfolio portfolioRef={refs.portfolioRef} /> */}
         <OurClients ourClientsRef={refs.ourClientsRef} />
-        <OurClientsSlider />
         <AboutUs />
         <Team teamRef={refs.teamRef} />
-        <Blog blogRef={refs.blogRef} />
+        {/* <Blog blogRef={refs.blogRef} /> */}
         <Footer
           footerRef={refs.footerRef}
           handleScrollClick={handleScrollClick}
