@@ -1,37 +1,8 @@
 import AllInformationsJS from "../../Informations";
 import rightButton from "../../Images/Services/rightButton.svg";
 import AboutUsStyle from "../AboutUs/AboutUs.module.scss";
-import AboutUsGif from "../../Images/AboutUs/AboutUsGif.gif";
-import { useRef } from "react";
+import VideoInAboutUs from "./VideoinAboutUs";
 export default function AboutUs({ aboutUsRef }) {
-  const videoEl = useRef(null);
-
-  // const attemptPlay = () => {
-  //   if (videoEl && videoEl.current) {
-  //     const video = videoEl.current;
-  //     if (video.play) {
-  //       const playPromise = video.play();
-  //       if (playPromise !== undefined) {
-  //         playPromise
-  //           .then(() => {})
-  //           .catch((error) => {
-  //             console.error("Error attempting to play", error);
-  //           });
-  //       }
-  //     }
-  //   }
-  // };
-
-  // const handleUserInteraction = () => {
-  //   attemptPlay();
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener("click", handleUserInteraction);
-  //   return () => {
-  //     document.removeEventListener("click", handleUserInteraction);
-  //   };
-  // }, []);
   return (
     <section ref={aboutUsRef} className={AboutUsStyle.AboutUsSection}>
       <div className={AboutUsStyle.headerBox}>
@@ -42,7 +13,7 @@ export default function AboutUs({ aboutUsRef }) {
         </p>
       </div>
       <div className={AboutUsStyle.imgBox}>
-        <img src={AboutUsGif} alt="" />
+        <VideoInAboutUs />
       </div>
       <div className={AboutUsStyle.description}>
         <div className={AboutUsStyle.head}>

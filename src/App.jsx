@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import "./App.scss";
-import AboutUs from "./Components/AboutUs/AboutUs";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import OurClients from "./Components/OurClients/OurClients";
@@ -10,6 +9,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Team from "./Components/Team/Team";
 import Blog from "./Components/Blog/Blog";
 import Footer from "./Components/Footer/Footer";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 function App() {
   const refreshPage = () => {

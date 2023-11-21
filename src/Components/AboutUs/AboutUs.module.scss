@@ -42,18 +42,18 @@
     }
   }
   .imgBox {
-    img {
-      width: 100%;
-      border-radius: 8px;
-      object-fit: cover;
-      max-height: 250px;
-      @include responsive728 {
-        max-height: 300px;
-      }
-      @include responsive992 {
-        max-height: 620px;
-      }
-    }
+    // img {
+    //   width: 100%;
+    //   border-radius: 8px;
+    //   object-fit: cover;
+    //   max-height: 250px;
+    //   @include responsive728 {
+    //     max-height: 300px;
+    //   }
+    //   @include responsive992 {
+    //     max-height: 620px;
+    //   }
+    // }
   }
   .description {
     .head {
