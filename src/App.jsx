@@ -7,6 +7,7 @@ import Services from "./Components/Services/Services";
 import UxAudit from "./Components/UxAudit/UxAudit";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Team from "./Components/Team/Team";
+
 import Blog from "./Components/Blog/Blog";
 import Footer from "./Components/Footer/Footer";
 import AboutUs from "./Components/AboutUs/AboutUs";
