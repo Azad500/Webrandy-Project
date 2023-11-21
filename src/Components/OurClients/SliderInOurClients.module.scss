@@ -1,6 +1,6 @@
 @import "../../Scss/Responsive\ measure/measure";
 
-.upSliderContainer::-webkit-scrollbar {
+.upSideContainer::-webkit-scrollbar {
   display: none;
 }
 .downSliderContainer::-webkit-scrollbar {
@@ -12,7 +12,7 @@
     justify-content: space-between;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: scroll;
     &.paused {
       .upSliderContainer {
         animation-play-state: paused;
