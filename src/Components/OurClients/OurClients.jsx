@@ -26,7 +26,6 @@ export default function OurClients({ ourClientsRef }) {
               className={OurClientsStyle.backgroundCircle3}
               alt=""
             />
-
             <img
               src={backgroundCirclePink}
               className={OurClientsStyle.backgroundCircle4}
