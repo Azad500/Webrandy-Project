@@ -1,7 +1,7 @@
 import AllInformationsJS from "../../Informations";
 import rightButton from "../../Images/Services/rightButton.svg";
 import AboutUsStyle from "../AboutUs/AboutUs.module.scss";
-import VideoInAboutUs from "./VideoinAboutUs";
+import VideoInAboutUs from "../AboutUs/VideoInAboutUs";
 export default function AboutUs({ aboutUsRef }) {
   return (
     <section ref={aboutUsRef} className={AboutUsStyle.AboutUsSection}>
