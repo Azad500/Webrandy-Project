@@ -87,96 +87,25 @@ const AllInformationsJS = {
     OurClientsTextInHeader: "Partnyorlar",
     ClientData: [
       {
-        img: AdressArchClient,
-        name: "Adress ",
-        surname: "Arch",
-        desc: "“Webrandy” komandası ilə işləmək həqiqətən möhtəşəmdir. Brief-i aldıqdan sonra gerisi onlardadır. Hər şeyi çox keyfiyyətli və gözoxşuyan şəkildə təhvil verdilər. Möhtəşəm!!!",
-      },
-      {
         img: Client2,
+        companyName: "Okean Əmlak",
         name: "Fərhad ",
         surname: "Abbasov",
         desc: "“Webrandy” tək kəliməylə möhtəşəmdilər. Enerjiləri, pozitivliyi çox əladır. Onlarla işləməkdən həqiqətən zövq aldım. ",
       },
       {
+        img: AdressArchClient,
+        companyName: "Adress Arch",
+        name: "Fərid & ",
+        surname: "Fidan",
+        desc: "“Webrandy” komandası ilə işləmək həqiqətən möhtəşəmdir. Brief-i aldıqdan sonra gerisi onlardadır. Hər şeyi çox keyfiyyətli və gözoxşuyan şəkildə təhvil verdilər. Möhtəşəm!!!",
+      },
+      {
         img: Client3,
-        name: "Wall - IT",
-        // surname: "Surname",
+        companyName: "Wall - IT",
+        name: "Tarlan ",
+        surname: "Mamedov",
         desc: "“Webrandy” şirkətinin əməkdaşları layihənin icrasına daim diqqət və qayğı ilə yanaşır, öz innovativ təcrübələrini tətbiq edərək mükəmməl dizayn ərsəyə gətirirlər.",
-      },
-    ],
-    CompanyData: [
-      {
-        logoImg: AdressArch,
-        title: "AdressArch",
-      },
-      {
-        logoImg: WallIt,
-        title: "Wall - IT",
-      },
-      {
-        logoImg: OkeanEmlak,
-        title: "Okean Əmlak",
-      },
-      {
-        logoImg: AdressArch,
-        title: "AdressArch",
-      },
-      {
-        logoImg: WallIt,
-        title: "Wall - IT",
-      },
-      {
-        logoImg: OkeanEmlak,
-        title: "Okean Əmlak",
-      },
-      {
-        logoImg: AdressArch,
-        title: "AdressArch",
-      },
-      {
-        logoImg: WallIt,
-        title: "Wall - IT",
-      },
-      {
-        logoImg: OkeanEmlak,
-        title: "Okean Əmlak",
-      },
-      {
-        logoImg: AdressArch,
-        title: "AdressArch",
-      },
-      {
-        logoImg: WallIt,
-        title: "Wall - IT",
-      },
-      {
-        logoImg: OkeanEmlak,
-        title: "Okean Əmlak",
-      },
-      {
-        logoImg: AdressArch,
-        title: "AdressArch",
-      },
-      {
-        logoImg: WallIt,
-        title: "Wall - IT",
-      },
-      {
-        logoImg: OkeanEmlak,
-        title: "Okean Əmlak",
-      },
-      {
-        logoImg: AdressArch,
-        title: "AdressArch",
-      },
-      {
-        logoImg: WallIt,
-        title: "Wall - IT",
-      },
-      {
-        logoImg: OkeanEmlak,
-        title: "Okean Əmlak",
       },
     ],
   },

@@ -1,15 +1,11 @@
 import styles from "./Team.module.scss";
 import AllInformationsJS from "../../Informations";
-import { useRef } from "react";
-
-
 import InstagramIcon from "../../Images/TeamImage/socialNetworkIcons/Instagram.svg";
 import FaceBookIcon from "../../Images/TeamImage/socialNetworkIcons/FaceBook.svg";
 import LinkEdinIcon from "../../Images/TeamImage/socialNetworkIcons/LinkEdin.svg";
 import TikTokIcon from "../../Images/TeamImage/socialNetworkIcons/TikTok.svg";
 
-export default function Team({teamRef}) {
-
+export default function Team({ teamRef }) {
   return (
     <section ref={teamRef} className={styles.container}>
       <div className={styles.teamTextContainer}>

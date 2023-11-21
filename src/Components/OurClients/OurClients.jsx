@@ -2,7 +2,7 @@ import OurClientsStyle from "../OurClients/OurClients.module.scss";
 import AllInformationsJS from "../../Informations";
 import backgroundCirclePink from "../../Images/OurClients/OurClientBackgroundCircle.svg";
 import backgroundCircleGray from "../../Images/OurClients/OurClientBackgroundCircleGray.svg";
-import OurClientsSlider from "./OurClientsSlider";
+import SliderInOurClients from "./SliderInOurClients";
 
 export default function OurClients({ ourClientsRef }) {
   return (
@@ -28,23 +28,26 @@ export default function OurClients({ ourClientsRef }) {
             />
 
             <img
-              className={OurClientsStyle.backgroundCircle4}
               src={backgroundCirclePink}
+              className={OurClientsStyle.backgroundCircle4}
               alt=""
             />
             {AllInformationsJS?.OurClients?.ClientData?.map((client, index) => (
               <div key={index} className={OurClientsStyle.card}>
                 <img src={client.img} alt="Kitten Image" />
-                <h3 className={OurClientsStyle.name}>
-                  {client.name} {client.surname}
-                </h3>
+                <div className={OurClientsStyle.companyAndCeo}>
+                  <h3>{client.companyName}</h3>
+                  <p>
+                    {client.name} {client.surname}
+                  </p>
+                </div>
                 <p className={OurClientsStyle.description}>{client.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <OurClientsSlider />
+      <SliderInOurClients />
     </section>
   );
 }

@@ -1,5 +1,4 @@
 import styles from "./OurClientsSlider.module.scss";
-
 import AllInformationsJS from "../../Informations";
 
 export default function OurClientsSlider() {
