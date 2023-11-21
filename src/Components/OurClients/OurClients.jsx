@@ -3,6 +3,8 @@ import AllInformationsJS from "../../Informations";
 import backgroundCirclePink from "../../Images/OurClients/OurClientBackgroundCircle.svg";
 import backgroundCircleGray from "../../Images/OurClients/OurClientBackgroundCircleGray.svg";
 import SliderInOurClients from "./SliderInOurClients";
+import vectorRight from "../../Images/OurClients/vectorRight.png";
+import vectorLeft from "../../Images/OurClients/vectorLeft.png";
 
 export default function OurClients({ ourClientsRef }) {
   return (
@@ -40,7 +42,13 @@ export default function OurClients({ ourClientsRef }) {
                     {client.name} {client.surname}
                   </p>
                 </div>
-                <p className={OurClientsStyle.description}>{client.desc}</p>
+                <div className={OurClientsStyle.description}>
+                  <div className={OurClientsStyle.vectorElement}>
+                    <img src={vectorLeft} alt="" />
+                    <img src={vectorRight} alt="" />
+                  </div>
+                  <p>{client.desc}</p>
+                </div>
               </div>
             ))}
           </div>

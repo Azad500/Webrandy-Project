@@ -1,11 +1,8 @@
 @import "../../Scss/Responsive\ measure/measure";
 
-@import "../../Scss/Responsive measure/measure";
-
 .upSliderContainer::-webkit-scrollbar {
   display: none;
 }
-
 .downSliderContainer::-webkit-scrollbar {
   display: none;
 }
@@ -16,6 +13,14 @@
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+    &.paused {
+      .upSliderContainer {
+        animation-play-state: paused;
+      }
+      .downSliderContainer {
+        animation-play-state: paused;
+      }
+    }
     .upSliderContainer {
       display: flex;
       justify-content: space-around;
@@ -39,6 +44,8 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
         p {
           color: #8e8e8e;
           font-family: Lexend;
@@ -46,6 +53,9 @@
           font-style: normal;
           font-weight: 600;
           line-height: normal;
+        }
+        &:hover {
+          transform: scale(1.2);
         }
       }
     }
@@ -68,6 +78,8 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
         p {
           color: #8e8e8e;
           font-family: Lexend;
@@ -75,6 +87,9 @@
           font-style: normal;
           font-weight: 600;
           line-height: normal;
+        }
+        &:hover {
+          transform: scale(1.2);
         }
       }
     }

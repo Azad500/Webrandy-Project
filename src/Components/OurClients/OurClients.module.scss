@@ -192,13 +192,35 @@
         transform: translateY(0);
         font-size: 0.9rem;
         text-align: left;
+        .vectorElement {
+          display: flex;
+          img {
+            width: 11.397px;
+            height: 23px;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+          }
+          img:last-child {
+            left: 20px;
+          }
+        }
       }
       .card:hover .description {
         bottom: 0;
       }
       .card:hover .companyAndCeo {
-        bottom: 175px;
+        bottom: 155px;
+        @include responsive728 {
+          bottom: 185px;
+        }
         @include responsive992 {
+          bottom: 135px;
+        }
+        @include responsive1200 {
+          bottom: 130px;
+        }
+        @include responsive1400 {
           bottom: 115px;
         }
       }
