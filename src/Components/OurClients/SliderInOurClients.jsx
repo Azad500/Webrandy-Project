@@ -1,7 +1,7 @@
 import styles from "./SliderInOurClients.module.scss";
 import okeanEmlak from "../../Images/OurClients/okeanEmlak.png";
-import adressArch from "../../Images/OurClients/adressArch.svg";
-import wallit from "../../Images/OurClients/wallit.svg";
+import adressArch from "../../Images/OurClients/adressArch.png";
+import wallit from "../../Images/OurClients/wallit.png";
 
 const clientsData = [
   { logo: okeanEmlak, name: "Okean Əmlak" },
