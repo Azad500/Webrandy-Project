@@ -4,7 +4,13 @@ import styles from "../AboutUs/VideoInAboutUs.module.scss";
 export default function VideoInAboutUs() {
   return (
     <div className={styles.container}>
-      <video autoPlay={true} muted src={VideosInAboutUsX}></video>
+      <video
+        autoPlay={true}
+        muted
+        playsInline
+        loop
+        src={VideosInAboutUsX}
+      ></video>
     </div>
   );
 }
