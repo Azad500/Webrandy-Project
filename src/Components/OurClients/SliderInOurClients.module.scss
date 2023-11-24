@@ -24,7 +24,7 @@
     .upSliderContainer {
       display: flex;
       justify-content: space-around;
-      animation: upSliderShow 35s infinite linear;
+      animation: upSliderShow 70s infinite linear;
       position: relative;
       margin-top: 40px;
       margin-bottom: 15px;
@@ -62,7 +62,7 @@
     .downSliderContainer {
       display: flex;
       justify-content: space-around;
-      animation: downSliderShow 35s infinite linear;
+      animation: downSliderShow 70s infinite linear;
       position: relative;
       margin-bottom: 50px;
       @keyframes downSliderShow {
