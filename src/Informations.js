@@ -39,7 +39,6 @@ import vectorRight from "./Images/OurClients/vectorRight.png";
 import vectorLeft from "./Images/OurClients/vectorLeft.png";
 import ArrowWhite from "./Images/Portfolio/arrowWhite.png";
 import portfolioBackground from "./Images/Portfolio/portfolioBackground.svg";
-import rightButton from "./Images/Services/rightButton.svg";
 import InstagramIcon from "./Images/TeamImage/socialNetworkIcons/Instagram.svg";
 import FaceBookIcon from "./Images/TeamImage/socialNetworkIcons/FaceBook.svg";
 import LinkEdinIcon from "./Images/TeamImage/socialNetworkIcons/LinkEdin.svg";
