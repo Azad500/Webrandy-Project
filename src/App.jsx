@@ -1,24 +1,20 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import "./App.scss";
-import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import OurClients from "./Components/OurClients/OurClients";
 import Services from "./Components/Services/Services";
 import UxAudit from "./Components/UxAudit/UxAudit";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Team from "./Components/Team/Team";
-
 import Blog from "./Components/Blog/Blog";
 import Footer from "./Components/Footer/Footer";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import HeaderVideo from "./Components/Home/HeaderVideo";
 
 function App() {
   const refreshPage = () => {
     window.location.reload();
   };
-
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const bodyClassName = navbarOpen ? "body-open" : "";
 
   const refs = {
     navbarRef: useRef(null),
@@ -40,14 +36,12 @@ function App() {
 
   return (
     <div>
-      <Home />
       <Navbar
         handleScrollClick={handleScrollClick}
-        navbarOpen={navbarOpen}
-        setNavbarOpen={setNavbarOpen}
         refreshPage={refreshPage}
         navbarRef={refs.navbarRef}
       />
+      <HeaderVideo />
       <main>
         <Services servicesRef={refs.servicesRef} />
         <UxAudit />

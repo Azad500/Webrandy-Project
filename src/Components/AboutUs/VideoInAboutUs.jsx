@@ -1,5 +1,5 @@
-import VideosInAboutUsX from "../../Images/AboutUs/AboutUsVideo.mp4";
 import styles from "../AboutUs/VideoInAboutUs.module.scss";
+import AllInformationsJS from "../../Informations";
 
 export default function VideoInAboutUs() {
   return (
@@ -9,7 +9,7 @@ export default function VideoInAboutUs() {
         muted
         playsInline
         loop
-        src={VideosInAboutUsX}
+        src={AllInformationsJS.AboutUsPart.VideosInAboutUsX}
       ></video>
     </div>
   );

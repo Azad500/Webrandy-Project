@@ -1,19 +1,18 @@
 import { useState } from "react";
 import styles from "./PaginationForMobile.module.scss";
+import AllInformationsJS from "../../Informations";
 
-export default function PaginationForMobile({
-  Blog1,
-  Blog2,
-  Blog3,
-  LeftArrow,
-  RightArrow,
-  Blog1Text,
-  Blog2Text,
-  Blog3Text,
-  Arrow,
-}) {
-  const informationsCards = [Blog1, Blog2, Blog3];
-  const blogTexts = [Blog1Text, Blog2Text, Blog3Text];
+export default function PaginationForMobile() {
+  const informationsCards = [
+    AllInformationsJS.BlogPart.Blog1,
+    AllInformationsJS.BlogPart.Blog2,
+    AllInformationsJS.BlogPart.Blog3,
+  ];
+  const blogTexts = [
+    AllInformationsJS.BlogPart.Blog1Text,
+    AllInformationsJS.BlogPart.Blog2Text,
+    AllInformationsJS.BlogPart.Blog3Text,
+  ];
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 1;
 
@@ -51,7 +50,7 @@ export default function PaginationForMobile({
           className={`${styles.left_arrow} ${styles.arrow}`}
           onClick={() => paginate(currentPage - 1)}
         >
-          <img src={LeftArrow} alt="" />
+          <img src={AllInformationsJS.BlogPart.LeftArrow} alt="Left Arrow" />
         </button>
         <div className={styles.slideContainer}>
           {currentCards.map((informationCard, index) => (
@@ -64,7 +63,7 @@ export default function PaginationForMobile({
               {currentBlogCards.map((blogText, index) => (
                 <div className={styles.textAndArrowElement} key={index}>
                   <p>{blogText}</p>
-                  <img src={Arrow} alt="" />
+                  <img src={AllInformationsJS.BlogPart.Arrow} alt="Arrow" />
                 </div>
               ))}
             </div>
@@ -74,7 +73,7 @@ export default function PaginationForMobile({
           className={`${styles.right_arrow} ${styles.arrow}`}
           onClick={() => paginate(currentPage + 1)}
         >
-          <img src={RightArrow} alt="" />
+          <img src={AllInformationsJS.BlogPart.RightArrow} alt="Right Arrow" />
         </button>
       </div>
     </div>

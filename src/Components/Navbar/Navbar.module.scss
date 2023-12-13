@@ -5,69 +5,88 @@
   margin: 0;
   box-sizing: border-box;
 }
-.navbar {
+header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  position: absolute;
-  top: 0;
-  @include responsive728 {
-    padding: 20px 24px;
-  }
-  @include responsive992 {
-    padding: 24px 28px;
-  }
-  div {
+  background: #f0f1fa;
+  .navbar {
+    width: 90%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    img {
-      width: 30px;
-      @include responsive992 {
-        width: 50px;
-      }
+    padding: 16px 0;
+    margin: auto;
+    @include responsive728 {
+      padding: 20px 0;
     }
-    h1 {
-      font-family: "Krona One", sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-      font-style: normal;
-      line-height: normal;
-      cursor: pointer;
-      padding-left: 7px;
-      @include responsive992 {
-        font-size: 2rem;
-        padding-left: 10px;
-      }
+    @include responsive992 {
+      width: 94%;
+      padding: 24px 0;
     }
-    .barMenu {
-      color: white;
-      @include responsive728 {
-        display: none;
-      }
-    }
-  }
-  .navbarActive {
-    display: none;
-    ul {
+    div {
       display: flex;
-      list-style: none;
       align-items: center;
-      justify-content: center;
-      gap: 24px;
-      a {
-        color: #f0f1fa;
-        text-decoration: none;
-        font-size: 0.875rem;
-        cursor: pointer;
+      img {
+        display: none;
+        @include responsive728 {
+          display: block;
+          width: 30px;
+        }
         @include responsive992 {
-          font-size: 1.25rem;
+          width: 60px;
+        }
+      }
+      h1 {
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: normal;
+        cursor: pointer;
+        @include responsive728 {
+          padding-left: 10px;
+        }
+        @include responsive992 {
+          font-size: 2rem;
         }
       }
     }
-    @include responsive728 {
-      display: flex;
+    .rightSideElements {
+      gap: 20px;
+      .button {
+        background-color: #8d11cc;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        @include responsive728 {
+          display: none;
+        }
+        a {
+          text-decoration: none;
+          color: #f0f1fa;
+        }
+      }
+    }
+    .navbarActive {
+      display: none;
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 0.875rem;
+          cursor: pointer;
+          @include responsive992 {
+            font-size: 1.25rem;
+          }
+        }
+      }
+      @include responsive728 {
+        display: flex;
+      }
     }
   }
 }

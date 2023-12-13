@@ -1,7 +1,5 @@
 import styles from "./UxAudit.module.scss";
 import AllInformationsJS from "../../Informations";
-import UxAuditImage from "../../Images/UxAudit/UxAuditImage.png";
-import Arrow from "../../Images/UxAudit/arrow.png";
 
 export default function UxAudit() {
   return (
@@ -11,14 +9,20 @@ export default function UxAudit() {
       </div>
       <div className={styles.uxAuditContainer}>
         <div className={styles.uxAuditImage}>
-          <img src={UxAuditImage} alt="UX Audit Image" />
+          <img
+            src={AllInformationsJS.UxAuditPart.UxAuditImage}
+            alt="UX Audit Image"
+          />
         </div>
         <div className={styles.uxAuditTextsContainer}>
           <div className={styles.headerTextAndSearchElement}>
             <p>{AllInformationsJS.UxAuditPart.UxAuditHeader}</p>
             <div className={styles.detailedSearchLaptopVersion}>
               <p>{AllInformationsJS.SameParts.DetailedSearch}</p>
-              <img src={Arrow} alt="Ux Audit Arrow" />
+              <img
+                src={AllInformationsJS.UxAuditPart.ArrowInUxAudit}
+                alt="Ux Audit Arrow"
+              />
             </div>
           </div>
           <div className={styles.buttonsAndTextTabletVersion}>
@@ -29,7 +33,10 @@ export default function UxAudit() {
             </div>
             <div className={styles.arrowAndSearchElementsTabletVersion}>
               <p>{AllInformationsJS.SameParts.DetailedSearch}</p>
-              <img src={Arrow} alt="Ux Audit Arrow" />
+              <img
+                src={AllInformationsJS.UxAuditPart.ArrowInUxAudit}
+                alt="Ux Audit Arrow"
+              />
             </div>
           </div>
           <div className={styles.uxAuditTextContainer}>
@@ -53,7 +60,10 @@ export default function UxAudit() {
       </div>
       <div className={styles.detailedSearchMobileVersion}>
         <p>{AllInformationsJS.SameParts.DetailedSearch}</p>
-        <img src={Arrow} alt="Ux Audit Arrow" />
+        <img
+          src={AllInformationsJS.UxAuditPart.ArrowInUxAudit}
+          alt="Ux Audit Arrow"
+        />
       </div>
       <div></div>
     </div>

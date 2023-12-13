@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
 import styles from "./PaginationForLaptop.module.scss";
+import AllInformationsJS from "../../Informations";
 
-export default function PaginationForLaptop({
-  Blog1,
-  Blog2,
-  Blog3,
-  Blog1Text,
-  Blog2Text,
-  Blog3Text,
-  Arrow,
-}) {
-  const images = [Blog1, Blog2, Blog3];
-  const texts = [Blog1Text, Blog2Text, Blog3Text];
+export default function PaginationForLaptop() {
+  const images = [
+    AllInformationsJS.BlogPart.Blog1,
+    AllInformationsJS.BlogPart.Blog2,
+    AllInformationsJS.BlogPart.Blog3,
+  ];
+  const texts = [
+    AllInformationsJS.BlogPart.Blog1Text,
+    AllInformationsJS.BlogPart.Blog2Text,
+    AllInformationsJS.BlogPart.Blog3Text,
+  ];
 
   return (
     <div className={styles.container}>
@@ -23,7 +24,7 @@ export default function PaginationForLaptop({
             </div>
             <div className={styles.textsWrapper}>
               <p>{texts[index]}</p>
-              <img src={Arrow} alt="" />
+              <img src={AllInformationsJS.BlogPart.Arrow} alt="Arrow" />
             </div>
           </div>
         ))}

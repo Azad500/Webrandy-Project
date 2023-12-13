@@ -1,40 +1,35 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import NavbarStyle from "../Navbar/Navbar.module.scss";
-import NavbarImage from "../../Images/Navbar/NavbarImage.png";
+import styles from "../Navbar/Navbar.module.scss";
 import AllInformationsJS from "../../Informations";
-import NavbarForMobile from "./NavbarForMobile";
+import HamburgerBar from "./HamburgerBar";
 export default function Navbar({
   navbarOpen,
-  setNavbarOpen,
   handleScrollClick,
   refreshPage,
   navbarRef,
 }) {
-  const handleToogle = () => {
-    setNavbarOpen(!navbarOpen);
-  };
   return (
     <header>
       <nav
-        className={`${NavbarStyle.navbar} ${
-          navbarOpen ? NavbarStyle.navbarActive : ""
-        }`}
+        className={`${styles.navbar} ${navbarOpen ? styles.navbarActive : ""}`}
       >
-        <div>
-          <img src={NavbarImage} alt="" />
+        <div className={styles.leftSideElement}>
+          <img
+            src={AllInformationsJS.NavbarPart.NavbarImage}
+            alt="Left Image"
+          />
           <h1 ref={navbarRef} onClick={refreshPage}>
             {AllInformationsJS.SameParts.Webrandy}
           </h1>
         </div>
-        <div>
-          <FontAwesomeIcon
-            onClick={handleToogle}
-            className={NavbarStyle.barMenu}
-            icon={faBars}
-          />
+        <div className={styles.rightSideElements}>
+          <button className={styles.button}>
+            <a target="_blank" href="https://wa.me/994517775770">
+              {AllInformationsJS.HomePart.ButtonDesc}
+            </a>
+          </button>
+          <HamburgerBar handleScrollClick={handleScrollClick} />
         </div>
-        <div className={NavbarStyle.navbarActive}>
+        <div className={styles.navbarActive}>
           <ul>
             <li>
               <a onClick={() => handleScrollClick("servicesRef")}>
@@ -73,11 +68,6 @@ export default function Navbar({
             </li>
           </ul>
         </div>
-        <NavbarForMobile
-          navbarOpen={navbarOpen}
-          setNavbarOpen={setNavbarOpen}
-          handleScrollClick={handleScrollClick}
-        />
       </nav>
     </header>
   );

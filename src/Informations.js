@@ -1,23 +1,63 @@
-import uxAuditPurpleJPG from "../src/Images/Services/uxauditpurple.png";
-import webProjectJPG from "../src/Images/Services/webProject.png";
-import designJPG from "../src/Images/Services/design.png";
-import researchingJPG from "../src/Images/Services/researching.png";
-import mobileAppJPG from "../src/Images/Services/mobileApp.png";
-import BrandingImgJPG from "../src/Images/Services/branding.png";
-import AzadMirzəzadə from "../src/Images/TeamImage/AzadMirzəzadə.png";
-import FidanMuradova from "../src/Images/TeamImage/FidanMuradova.png";
-import MahirTağıyev from "../src/Images/TeamImage/MahirTağıyev.png";
-import Səidİsaoğlu from "../src/Images/TeamImage/Səidİsaoğlu.png";
-import TarlanMovlamov from "../src/Images/TeamImage/TarlanMovlamov.png";
-import SitaraNasirova from "../src/Images/TeamImage/SitaraNasirova.png";
+import uxAuditPurpleJPG from "./Images/Services/uxauditpurple.png";
+import webProjectJPG from "./Images/Services/webProject.png";
+import designJPG from "./Images/Services/design.png";
+import researchingJPG from "./Images/Services/researching.png";
+import mobileAppJPG from "./Images/Services/mobileApp.png";
+import BrandingImgJPG from "./Images/Services/branding.png";
+import AzadMirzəzadə from "./Images/TeamImage/AzadMirzəzadə.png";
+import FidanMuradova from "./Images/TeamImage/FidanMuradova.png";
+import MahirTağıyev from "./Images/TeamImage/MahirTağıyev.png";
+import Səidİsaoğlu from "./Images/TeamImage/Səidİsaoğlu.png";
+import TarlanMovlamov from "./Images/TeamImage/TarlanMovlamov.png";
+import SitaraNasirova from "./Images/TeamImage/SitaraNasirova.png";
 import AdressArchClient from "./Images/OurClients/AdressArchClient.png";
 import Client2 from "./Images/OurClients/Client2.png";
 import Client3 from "./Images/OurClients/Client3.png";
+import VideosInAboutUsX from "./Images/AboutUs/AboutUsVideo.mp4";
+import HeaderVideos from "./Images/Home/HeaderVideo.mp4";
+import rightButton from "./Images/Services/rightButton.svg";
+import Blog1 from "./Images/Blog/blog1.png";
+import Blog2 from "./Images/Blog/blog2.png";
+import Blog3 from "./Images/Blog/blog2.png";
+import LeftArrow from "./Images/Blog/leftArrow.png";
+import RightArrow from "./Images/Blog/rightArrow.png";
+import Arrow from "./Images/UxAudit/arrow.png";
+import FirstVideo from "./Images/Portfolio/videos/firstVideo.mp4";
+import SecondVideo from "./Images/Portfolio/videos/secondVideo.mp4";
+import ThirdVideo from "./Images/Portfolio/videos/thirdVideo.mp4";
+import FourthVideo from "./Images/Portfolio/videos/fourthVideo.mp4";
+import FiveVideo from "./Images/Portfolio/videos/fiveVideo.mp4";
+import FooterImageWebrandy from "./Images/Footer/FooterImageWebrandy.png";
+import InstagramIconForFooter from "./Images/Footer/instagramForFooter.svg";
+import FacebookIconForFooter from "./Images/Footer/facebookForFooter.svg";
+import LinkedinIconForFooter from "./Images/Footer/linkedinForFooter.svg";
+import TiktokIconForFooter from "./Images/Footer/tiktokForFooter.svg";
+import NavbarImage from "./Images/Navbar/NavbarImage.png";
+import backgroundCirclePink from "./Images/OurClients/OurClientBackgroundCircle.svg";
+import backgroundCircleGray from "./Images/OurClients/OurClientBackgroundCircleGray.svg";
+import vectorRight from "./Images/OurClients/vectorRight.png";
+import vectorLeft from "./Images/OurClients/vectorLeft.png";
+import ArrowWhite from "./Images/Portfolio/arrowWhite.png";
+import portfolioBackground from "./Images/Portfolio/portfolioBackground.svg";
+import rightButton from "./Images/Services/rightButton.svg";
+import InstagramIcon from "./Images/TeamImage/socialNetworkIcons/Instagram.svg";
+import FaceBookIcon from "./Images/TeamImage/socialNetworkIcons/FaceBook.svg";
+import LinkEdinIcon from "./Images/TeamImage/socialNetworkIcons/LinkEdin.svg";
+import TikTokIcon from "./Images/TeamImage/socialNetworkIcons/TikTok.svg";
+import UxAuditImage from "./Images/UxAudit/UxAuditImage.png";
+import ArrowInUxAudit from "./Images/UxAudit/arrow.png";
 
 const AllInformationsJS = {
   SameParts: {
     DetailedSearch: "Ətraflı bax",
     Webrandy: "Webrandy",
+  },
+  CardFlip: {
+    FirstVideo: FirstVideo,
+    SecondVideo: SecondVideo,
+    ThirdVideo: ThirdVideo,
+    FourthVideo: FourthVideo,
+    FiveVideo: FiveVideo,
   },
   NavbarPart: {
     Services: "Xidmətlər",
@@ -26,13 +66,16 @@ const AllInformationsJS = {
     Partners: "Partnyorlar",
     Blog: "Bloq",
     Contact: "Əlaqə",
+    NavbarImage: NavbarImage,
   },
   HomePart: {
     HomeDesc: "İstifadəçi təcrübəsi ilə satışlarınızı artırın",
     ButtonDesc: "Konsultasiya",
+    HeaderVideos: HeaderVideos,
   },
   ServicesPart: {
     Services: "Xidmətlər",
+    rightButton: rightButton,
     Categories: [
       "Web Layihələr",
       "UX Audit",
@@ -82,6 +125,10 @@ const AllInformationsJS = {
   },
   OurClients: {
     OurClientsTextInHeader: "Partnyorlar",
+    backgroundCirclePink: backgroundCirclePink,
+    backgroundCircleGray: backgroundCircleGray,
+    vectorRight: vectorRight,
+    vectorLeft: vectorLeft,
     ClientData: [
       {
         img: Client2,
@@ -111,6 +158,8 @@ const AllInformationsJS = {
     FirstText: "Webrandy komanda",
     SecondText:
       "Biz, Webrandy komandası olaraq istifadəçi təcrübəsi  (UX), qrafik dizayn, veb və mobil proqramlaşdırma və brendinq üzrə ixtisaslaşmışıq. Layihələrimizdə təkcə bacarıqlarımızı deyil, həm də sevgimizi ortaya qoyuruq. Müştərilərimizin vizyonunu reallığa çevirmək əzmimizlə hər bir layihədə brendlərin sərhədlərini yenidən müəyyənləşdiririk. İstifadəçilər üçün ən əlçatan məhsullar hazırlayırıq. Webrandy komandası olaraq biz burada təkcə bizneslə məşğul olmaq üçün deyil, rəqəmsal sənət əsərləri yaratmaq üçün də buradayıq. Təcrübəli və bacarıqlı dizaynerlərimiz sənət əsərlərini, araşdırmaçılarımızın istifadəçiləri və hədəf kütləsini araşdırmalarına uyğun şəkildə dizayn edir. Veb layihələri isə bu dizayn nümunələri əsasında proqramçılarımız hazırlayıb təhvil verirlər.",
+    VideosInAboutUsX: VideosInAboutUsX,
+    rightButton: rightButton,
   },
 
   UxAuditPart: {
@@ -123,6 +172,8 @@ const AllInformationsJS = {
     UXButton4: "Research",
     UXButton5: "Audit",
     UXButton6: "UI  Design",
+    UxAuditImage: UxAuditImage,
+    ArrowInUxAudit: ArrowInUxAudit,
   },
   PortfolioPart: {
     PortfolioText: "Portfolio",
@@ -133,9 +184,15 @@ const AllInformationsJS = {
     HeaderInBackInCardFlip: "Яндекс Умный Дом",
     TextInBackInCardFlip:
       "Четыре подробных лендинга для четырех разных колонок Яндекса сдемонстрацией их возможностей.",
+    ArrowWhite: ArrowWhite,
+    portfolioBackground: portfolioBackground,
   },
   TeamPart: {
     TeamText: "Komanda",
+    InstagramIcon: InstagramIcon,
+    FaceBookIcon: FaceBookIcon,
+    LinkEdinIcon: LinkEdinIcon,
+    TikTokIcon: TikTokIcon,
     teamMates: [
       {
         Img: AzadMirzəzadə,
@@ -201,6 +258,12 @@ const AllInformationsJS = {
     Blog1Text: "Bank tətbiqi nümunəsindən istifadə edərək Figma",
     Blog2Text: "Bank tətbiqi nümunəsindən istifadə edərək Figma",
     Blog3Text: "Bank tətbiqi nümunəsindən istifadə edərək Figma",
+    Blog1: Blog1,
+    Blog2: Blog2,
+    Blog3: Blog3,
+    LeftArrow: LeftArrow,
+    RightArrow: RightArrow,
+    Arrow: Arrow,
   },
   FooterPart: {
     ButtonText: "Pulsuz konsultasiya",
@@ -220,6 +283,11 @@ const AllInformationsJS = {
     BlogInFooter: "Bloq",
     Contact: "Əlaqə",
     AboutUs: "Haqqımızda",
+    FooterImageWebrandy: FooterImageWebrandy,
+    InstagramIconForFooter: InstagramIconForFooter,
+    FacebookIconForFooter: FacebookIconForFooter,
+    LinkedinIconForFooter: LinkedinIconForFooter,
+    TiktokIconForFooter: TiktokIconForFooter,
   },
 };
 export default AllInformationsJS;

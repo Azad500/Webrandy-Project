@@ -1,31 +1,30 @@
 import AllInformationsJS from "../../Informations";
-import rightButton from "../../Images/Services/rightButton.svg";
-import AboutUsStyle from "../AboutUs/AboutUs.module.scss";
+import styles from "../AboutUs/AboutUs.module.scss";
 import VideoInAboutUs from "../AboutUs/VideoInAboutUs";
 export default function AboutUs({ aboutUsRef }) {
   return (
-    <section ref={aboutUsRef} className={AboutUsStyle.AboutUsSection}>
-      <div className={AboutUsStyle.headerBox}>
+    <section ref={aboutUsRef} className={styles.AboutUsSection}>
+      <div className={styles.headerBox}>
         <h2>{AllInformationsJS.AboutUsPart.partName}</h2>
         <p>
           {AllInformationsJS.SameParts.DetailedSearch}
-          <img src={rightButton} />
+          <img src={AllInformationsJS.AboutUsPart.rightButton} />
         </p>
       </div>
-      <div className={AboutUsStyle.imgBox}>
+      <div className={styles.imgBox}>
         <VideoInAboutUs />
       </div>
-      <div className={AboutUsStyle.description}>
-        <div className={AboutUsStyle.head}>
-          <p className={AboutUsStyle.title}>
+      <div className={styles.description}>
+        <div className={styles.head}>
+          <p className={styles.title}>
             {AllInformationsJS.AboutUsPart.FirstText}
           </p>
-          <p className={AboutUsStyle.rightButton}>
+          <p className={styles.rightButton}>
             {AllInformationsJS.SameParts.DetailedSearch}{" "}
-            <img src={rightButton} />
+            <img src={AllInformationsJS.AboutUsPart.rightButton} />
           </p>
         </div>
-        <p className={AboutUsStyle.description}>
+        <p className={styles.description}>
           {AllInformationsJS.AboutUsPart.SecondText}
         </p>
       </div>

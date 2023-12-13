@@ -1,19 +1,18 @@
 import React, { useEffect } from "react";
 import styles from "./PaginationForTablet.module.scss";
+import AllInformationsJS from "../../Informations";
 
-export default function PaginationForTablet({
-  Blog1,
-  Blog2,
-  Blog3,
-  LeftArrow,
-  RightArrow,
-  Blog1Text,
-  Blog2Text,
-  Blog3Text,
-  Arrow,
-}) {
-  const images = [Blog1, Blog2, Blog3];
-  const texts = [Blog1Text, Blog2Text, Blog3Text];
+export default function PaginationForTablet() {
+  const images = [
+    AllInformationsJS.BlogPart.Blog1,
+    AllInformationsJS.BlogPart.Blog2,
+    AllInformationsJS.BlogPart.Blog3,
+  ];
+  const texts = [
+    AllInformationsJS.BlogPart.Blog1Text,
+    AllInformationsJS.BlogPart.Blog2Text,
+    AllInformationsJS.BlogPart.Blog3Text,
+  ];
 
   useEffect(() => {
     const container = document.querySelector(`.${styles.paginationContainer}`);
@@ -44,7 +43,7 @@ export default function PaginationForTablet({
         className={`${styles.leftArrowElement} ${styles.arrowElement}`}
         id={styles.leftArrowElement}
       >
-        <img src={LeftArrow} alt="" />
+        <img src={AllInformationsJS.BlogPart.LeftArrow} alt="Left Arrow" />
       </button>
       <div className={styles.paginationContainer}>
         {images.map((image, index) => (
@@ -54,7 +53,7 @@ export default function PaginationForTablet({
             </div>
             <div className={styles.textsWrapper}>
               <p>{texts[index]}</p>
-              <img src={Arrow} alt="" />
+              <img src={AllInformationsJS.BlogPart.Arrow} alt="Arrow" />
             </div>
           </div>
         ))}
@@ -63,7 +62,7 @@ export default function PaginationForTablet({
         className={`${styles.rightArrowElement} ${styles.arrowElement}`}
         id={styles.rightArrowElement}
       >
-        <img src={RightArrow} alt="" />
+        <img src={AllInformationsJS.BlogPart.RightArrow} alt="Right Arrow" />
       </button>
     </div>
   );

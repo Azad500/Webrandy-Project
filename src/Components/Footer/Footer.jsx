@@ -1,12 +1,6 @@
 import styles from "./Footer.module.scss";
 import AllInformationsJS from "../../Informations";
 import Arrow from "../../Images/UxAudit/arrow.png";
-import InstagramIconForFooter from "../../Images/Footer/instagramForFooter.svg";
-import FacebookIconForFooter from "../../Images/Footer/facebookForFooter.svg";
-import LinkedinIconForFooter from "../../Images/Footer/linkedinForFooter.svg";
-import TiktokIconForFooter from "../../Images/Footer/tiktokForFooter.svg";
-import ImageInFooter from "../../Images/Footer/footerImage.png";
-import FooterImageWebrandy from "../../Images/Footer/FooterImageWebrandy.png";
 
 export default function Footer({ footerRef, handleScrollClick }) {
   return (
@@ -16,7 +10,10 @@ export default function Footer({ footerRef, handleScrollClick }) {
           onClick={() => handleScrollClick("navbarRef")}
           className={styles.webrandyTextInFooter}
         >
-          <img src={FooterImageWebrandy} alt="Footer Webrandy" />
+          <img
+            src={AllInformationsJS.FooterPart.FooterImageWebrandy}
+            alt="Footer Webrandy"
+          />
           <p>{AllInformationsJS.SameParts.Webrandy}</p>
         </div>
         <div className={styles.textsAndButtonElement}>
@@ -57,7 +54,13 @@ export default function Footer({ footerRef, handleScrollClick }) {
         </div>
       </div>
       <div className={styles.imageinFooterElement}>
-        <img src={ImageInFooter} alt="" />
+        <video
+          autoPlay={true}
+          muted
+          playsInline
+          loop
+          src={AllInformationsJS.HomePart.HeaderVideos}
+        ></video>
       </div>
       <div className={styles.phonesAndInputElement}>
         <div className={styles.menuInFooter}>
@@ -122,16 +125,28 @@ export default function Footer({ footerRef, handleScrollClick }) {
         <div className={styles.iconsElement}>
           <div className={styles.iconsWrapper}>
             <a target="_blank" href="https://instagram.com/webrandyco">
-              <img src={InstagramIconForFooter} alt="Instagram" />
+              <img
+                src={AllInformationsJS.FooterPart.InstagramIconForFooter}
+                alt="Instagram"
+              />
             </a>
             <a target="_blank" href="https://facebook.com/webrandyco">
-              <img src={FacebookIconForFooter} alt="Facebook" />
+              <img
+                src={AllInformationsJS.FooterPart.FacebookIconForFooter}
+                alt="Facebook"
+              />
             </a>
             <a target="_blank" href="https://linkedin.com/company/webrandyco">
-              <img src={LinkedinIconForFooter} alt="LinkEdin" />
+              <img
+                src={AllInformationsJS.FooterPart.LinkedinIconForFooter}
+                alt="LinkEdin"
+              />
             </a>
             <a target="_blank" href="https://tiktok.com/webrandyco">
-              <img src={TiktokIconForFooter} alt="TikTok" />
+              <img
+                src={AllInformationsJS.FooterPart.TiktokIconForFooter}
+                alt="TikTok"
+              />
             </a>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import styles from "./PureCardFlip.module.scss";
 import AllInformationsJS from "../../Informations";
-import ThirdVideo from "../../Images/Portfolio/videos/thirdVideo.mp4";
 import { useState } from "react";
 
 export default function PureCardFlipThird() {
@@ -21,7 +20,10 @@ export default function PureCardFlipThird() {
         <div className={styles.content}>
           <div className={`${styles.front} ${isFlipped ? styles.hidden : ""}`}>
             <video autoPlay muted loop>
-              <source src={ThirdVideo} type="video/mp4" />
+              <source
+                src={AllInformationsJS.CardFlip.ThirdVideo}
+                type="video/mp4"
+              />
             </video>
             <div className={styles.overlay}>
               <h1>{AllInformationsJS.PortfolioPart.HeaderInFrontInCardFlip}</h1>

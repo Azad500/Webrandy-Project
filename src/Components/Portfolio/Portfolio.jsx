@@ -5,8 +5,6 @@ import PureCardFlipThird from "../CardFlip/PureCardFlipThird";
 import PureCardFlipFourth from "../CardFlip/PureCardFlipFourth";
 import PureCardFlipFive from "../CardFlip/PureCardFlipFive";
 import AllInformationsJS from "../../Informations";
-import ArrowWhite from "../../Images/Portfolio/arrowWhite.png";
-import portfolioBackground from "../../Images/Portfolio/portfolioBackground.svg";
 import PureCardFlipSix from "../CardFlip/PureCardFlipSix";
 
 export default function Portfolio({ portfolioRef }) {
@@ -15,27 +13,27 @@ export default function Portfolio({ portfolioRef }) {
       <div className={styles.backgroundColorElement}>
         <img
           className={styles.firstBackground}
-          src={portfolioBackground}
+          src={AllInformationsJS.PortfolioPart.portfolioBackground}
           alt=""
         />
         <img
           className={styles.secondBackground}
-          src={portfolioBackground}
+          src={AllInformationsJS.PortfolioPart.portfolioBackground}
           alt=""
         />
         <img
           className={styles.thirdBackground}
-          src={portfolioBackground}
+          src={AllInformationsJS.PortfolioPart.portfolioBackground}
           alt=""
         />
         <img
           className={styles.fourthBackground}
-          src={portfolioBackground}
+          src={AllInformationsJS.PortfolioPart.portfolioBackground}
           alt=""
         />
         <img
           className={styles.fivethBackground}
-          src={portfolioBackground}
+          src={AllInformationsJS.PortfolioPart.portfolioBackground}
           alt=""
         />
       </div>
@@ -44,7 +42,10 @@ export default function Portfolio({ portfolioRef }) {
           <p>{AllInformationsJS.PortfolioPart.PortfolioText}</p>
           <div className={styles.detailedSearchLaptopVersion}>
             <p>{AllInformationsJS.SameParts.DetailedSearch}</p>
-            <img src={ArrowWhite} alt="Portfolio Arrow" />
+            <img
+              src={AllInformationsJS.PortfolioPart.ArrowWhite}
+              alt="Portfolio Arrow"
+            />
           </div>
         </div>
         <div className={styles.allCardFlipContainers}>
@@ -73,7 +74,10 @@ export default function Portfolio({ portfolioRef }) {
         </div>
         <div className={styles.detailedSearchMobileVersion}>
           <p>{AllInformationsJS.SameParts.DetailedSearch}</p>
-          <img src={ArrowWhite} alt="Portfolio Arrow" />
+          <img
+            src={AllInformationsJS.PortfolioPart.ArrowWhite}
+            alt="Portfolio Arrow"
+          />
         </div>
       </div>
     </div>
