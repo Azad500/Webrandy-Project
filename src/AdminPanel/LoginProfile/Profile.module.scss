@@ -1,0 +1,66 @@
+@import "../../Scss/Responsive/measure";
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .borderContainer {
+    width: 80%;
+    background-color: white;
+    border: 1px solid #8d11cc;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @include responsive500 {
+      width: 450px;
+    }
+    p {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #8d11cc;
+      font-family: Manrope;
+      @include responsive1024 {
+        font-size: 24px;
+      }
+    }
+    .inputsContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        display: block;
+        margin-bottom: 10px;
+        width: 60%;
+        padding: 5px;
+        font-family: Manrope;
+        &::placeholder {
+          font-family: Manrope;
+        }
+        @include responsive1024 {
+          padding: 10px 5px;
+          font-size: 18px;
+        }
+      }
+      .submitButton {
+        background-color: #8d11cc;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.95);
+        }
+        @include responsive1024 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
