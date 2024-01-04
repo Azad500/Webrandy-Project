@@ -47,7 +47,7 @@ import UxAuditImage from "./Images/UxAudit/UxAuditImage.png";
 import ArrowInUxAudit from "./Images/UxAudit/arrow.png";
 // ----------------------AdminPanel---------------------------------
 import BurgerIcon from "../src/assets/BurgerMenu.svg";
-import WebrandyLogo from "../src/assets/webrandyLogo.svg";
+import WebrandyLogo from "../src/assets/webrandylogo.svg";
 import inputButton from "../src/assets/inputButton.svg";
 import addInputButton from "../src/assets/addInputButton.svg";
 import ProfilePhotos from "./Images/profileImg/ProfilePhotos.jpeg";
