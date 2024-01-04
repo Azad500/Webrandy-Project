@@ -1,5 +1,5 @@
 import styles from "./Home.module.scss";
-import Informations from "../InformationsPart/Informations/Informations";
+import Informations from "../../AdminPanel/InformationsPart/Informations/Informations";
 import LeftAside from "../InformationsPart/LeftAside/LeftAside";
 import { Route, Routes } from "react-router-dom";
 import Portfolio from "../PortfolioPart/Portfolio";
