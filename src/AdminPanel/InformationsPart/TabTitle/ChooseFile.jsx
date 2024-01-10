@@ -1,12 +1,14 @@
 import React, { useState, useRef } from "react";
 import styles from "./ChooseFile.module.scss";
 import AllInformationsJS from "../../../Informations";
-
-export default function FileInputWithPreview({
+import { useDispatch } from "react-redux";
+import {
   setFavIconImg,
-  setLogoLightImg,
   setLogoDarkImg,
-}) {
+  setLogoLightImg,
+} from "../../../Redux/features/States/slice";
+
+export default function FileInputWithPreview() {
   const [selectedFiles, setSelectedFiles] = useState([null, null, null]);
   const [previewURLs, setPreviewURLs] = useState([null, null, null]);
   const fileInputRefs = useRef([
@@ -14,6 +16,7 @@ export default function FileInputWithPreview({
     React.createRef(),
     React.createRef(),
   ]);
+  const dispatch = useDispatch();
   const titles = ["FavIcon", "Logo (Light)", "Logo (Dark)"];
 
   const handleFileChange = (e, index) => {
@@ -37,11 +40,11 @@ export default function FileInputWithPreview({
         });
 
         if (index === 0) {
-          setFavIconImg(fileResult);
+          dispatch(setFavIconImg(fileResult));
         } else if (index === 1) {
-          setLogoLightImg(fileResult);
+          dispatch(setLogoLightImg(fileResult));
         } else if (index === 2) {
-          setLogoDarkImg(fileResult);
+          dispatch(setLogoDarkImg(fileResult));
         }
       };
 
@@ -69,11 +72,11 @@ export default function FileInputWithPreview({
     }
 
     if (index === 0) {
-      setFavIconImg(null);
+      dispatch(setFavIconImg(null));
     } else if (index === 1) {
-      setLogoLightImg(null);
+      dispatch(setLogoLightImg(null));
     } else if (index === 2) {
-      setLogoDarkImg(null);
+      dispatch(setLogoDarkImg(null));
     }
   };
 

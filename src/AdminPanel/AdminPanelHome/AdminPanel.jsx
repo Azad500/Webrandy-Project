@@ -1,28 +1,49 @@
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./AdminPanel.css";
 import Home from "../Home/Home";
 import Navbar from "../InformationsPart/Navbar/Navbar";
 import SaveButton from "../InformationsPart/SaveButton/SaveButton";
-import { fetchCounter, postContent } from "../../Redux/counter/counterSlice";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+import {
+  setAddress,
+  setFacebookLink,
+  setInstagramLink,
+  setKeywords,
+  setLinkedinLink,
+  setMail1,
+  setMail2,
+  setPhoneNumber1,
+  setPhoneNumber2,
+  setPhoneNumber3,
+  setTabTitle,
+  setYoutubeLink,
+} from "../../Redux/features/States/slice";
+import { fetchData, postData } from "../../Redux/ThunkApi/AsyncThunk";
 export default function AdminPanel() {
   const dispatch = useDispatch();
-  const [tabTitle, setTabTitle] = useState("");
-  const [mail1, setMail1] = useState("");
-  const [mail2, setMail2] = useState("");
-  const [phoneNumber1, setPhoneNumber1] = useState("");
-  const [phoneNumber2, setPhoneNumber2] = useState("");
-  const [phoneNumber3, setPhoneNumber3] = useState("");
-  const [address, setAddress] = useState("");
-  const [instagramLink, setInstagramLink] = useState("");
-  const [facebookLink, setFacebookLink] = useState("");
-  const [linkedinLink, setLinkedinLink] = useState("");
-  const [youtubeLink, setYoutubeLink] = useState("");
-  const [favIconImg, setFavIconImg] = useState("");
-  const [logoLightImg, setLogoLightImg] = useState("");
-  const [logoDarkImg, setLogoDarkImg] = useState("");
-  const [footerVideo, setFooterVideo] = useState("");
+  const tabTitle = useSelector((state) => state.states.tabTitle);
+  const mail1 = useSelector((state) => state.states.mail1);
+  const mail2 = useSelector((state) => state.states.mail2);
+  const phoneNumber1 = useSelector((state) => state.states.phoneNumber1);
+  const phoneNumber2 = useSelector((state) => state.states.phoneNumber2);
+  const phoneNumber3 = useSelector((state) => state.states.phoneNumber3);
+  const address = useSelector((state) => state.states.address);
+  const instagramLink = useSelector((state) => state.states.instagramLink);
+  const facebookLink = useSelector((state) => state.states.facebookLink);
+  const linkedinLink = useSelector((state) => state.states.linkedinLink);
+  const youtubeLink = useSelector((state) => state.states.youtubeLink);
+  const favIconImg = useSelector((state) => state.states.favIconImg);
+  const logoLightImg = useSelector((state) => state.states.logoLightImg);
+  const logoDarkImg = useSelector((state) => state.states.logoDarkImg);
+  const footerVideo = useSelector((state) => state.states.footerVideo);
+  const keywords = useSelector((state) => state.states.keywords);
 
   const isFormEmpty =
     !tabTitle &&
@@ -39,14 +60,14 @@ export default function AdminPanel() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (isFormEmpty) {
       console.log("Formda doldurulmuş bir alan yok.");
+      toast.error("Heç bir simvol əlavə edilmədi");
       return;
     }
     const metaTagKeywords = keywords.map((k) => k.value);
     dispatch(
-      postContent({
+      postData({
         Tabtitle: tabTitle,
         MetaTagKeywords: metaTagKeywords,
         Mail1: mail1,
@@ -65,28 +86,27 @@ export default function AdminPanel() {
         FooterVideo: footerVideo,
       })
     );
-    //
   };
   useEffect(() => {
-    dispatch(fetchCounter());
+    dispatch(fetchData());
   }, [dispatch]);
 
-  const contents = useSelector((state) => state.counter.contents);
+  const data = useSelector((state) => state.data.data);
 
   useEffect(() => {
-    if (contents.length > 0) {
-      const latestData = contents[contents.length - 1];
-      setTabTitle(latestData.Tabtitle || "");
-      setMail1(latestData.Mail1 || "");
-      setMail2(latestData.Mail2 || "");
-      setPhoneNumber1(latestData.PhoneNumber1 || "");
-      setPhoneNumber2(latestData.PhoneNumber2 || "");
-      setPhoneNumber3(latestData.PhoneNumber3 || "");
-      setAddress(latestData.Address || "");
-      setInstagramLink(latestData.InstagramLink || "");
-      setFacebookLink(latestData.FacebookLink || "");
-      setLinkedinLink(latestData.LinkedinLink || "");
-      setYoutubeLink(latestData.YoutubeLink || "");
+    if (data.length > 0) {
+      const latestData = data[data.length - 1];
+      dispatch(setTabTitle(latestData.Tabtitle || ""));
+      dispatch(setMail1(latestData.Mail1 || ""));
+      dispatch(setMail2(latestData.Mail2 || ""));
+      dispatch(setPhoneNumber1(latestData.PhoneNumber1 || ""));
+      dispatch(setPhoneNumber2(latestData.PhoneNumber2 || ""));
+      dispatch(setPhoneNumber3(latestData.PhoneNumber3 || ""));
+      dispatch(setAddress(latestData.Address || ""));
+      dispatch(setInstagramLink(latestData.InstagramLink || ""));
+      dispatch(setFacebookLink(latestData.FacebookLink || ""));
+      dispatch(setLinkedinLink(latestData.LinkedinLink || ""));
+      dispatch(setYoutubeLink(latestData.YoutubeLink || ""));
       if (
         latestData.MetaTagKeywords &&
         Array.isArray(latestData.MetaTagKeywords)
@@ -97,63 +117,33 @@ export default function AdminPanel() {
             value: keyword,
           })
         );
-        setKeywords(transformedKeywords);
+        dispatch(setKeywords(transformedKeywords));
       }
     }
-  }, [contents]);
+  }, [data]);
   // ---------------------ForTabTitle---------------
-  const [keywords, setKeywords] = useState([{ id: 1, value: "" }]);
   const handleAddInput = (e) => {
     e.preventDefault();
-    setKeywords((prevKeywords) => [
-      ...prevKeywords,
-      { id: prevKeywords.length + 1, value: "" },
-    ]);
+    const newKeyword = { id: keywords.length + 1, value: "" };
+    dispatch(setKeywords([...keywords, newKeyword]));
   };
+
   const handleRemoveInput = (id) => {
-    setKeywords((prevKeywords) =>
-      prevKeywords.filter((keyword) => keyword.id !== id)
-    );
+    const updatedKeywords = keywords.filter((keyword) => keyword.id !== id);
+    dispatch(setKeywords(updatedKeywords));
   };
 
   return (
     <div className="container">
       <Navbar />
       <Home
-        tabTitle={tabTitle}
-        mail1={mail1}
-        mail2={mail2}
-        phoneNumber1={phoneNumber1}
-        phoneNumber2={phoneNumber2}
-        phoneNumber3={phoneNumber3}
-        address={address}
-        instagramLink={instagramLink}
-        facebookLink={facebookLink}
-        linkedinLink={linkedinLink}
-        youtubeLink={youtubeLink}
-        setTabTitle={setTabTitle}
-        setMail1={setMail1}
-        setMail2={setMail2}
-        setPhoneNumber1={setPhoneNumber1}
-        setPhoneNumber2={setPhoneNumber2}
-        setPhoneNumber3={setPhoneNumber3}
-        setAddress={setAddress}
-        setInstagramLink={setInstagramLink}
-        setFacebookLink={setFacebookLink}
-        setLinkedinLink={setLinkedinLink}
-        setYoutubeLink={setYoutubeLink}
-        keywords={keywords}
-        setKeywords={setKeywords}
         handleAddInput={handleAddInput}
         handleRemoveInput={handleRemoveInput}
-        setFavIconImg={setFavIconImg}
-        setLogoLightImg={setLogoLightImg}
-        setLogoDarkImg={setLogoDarkImg}
-        setFooterVideo={setFooterVideo}
       />
       <div className="saveButton">
-        <SaveButton handleSubmit={handleSubmit} isFormEmpty={isFormEmpty} />
+        <SaveButton handleSubmit={handleSubmit} />
       </div>
+      <ToastContainer />
     </div>
   );
 }

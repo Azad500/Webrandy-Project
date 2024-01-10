@@ -17,7 +17,6 @@ export default function HeaderVideo() {
         <p>{AllInformationsJS.HomePart.HomeDesc}</p>
         <div className={styles.otherTexts}>
           <p>{AllInformationsJS.HomePart.HomeDesc}</p>
-          <p>{AllInformationsJS.HomePart.HomeDesc}</p>
         </div>
         <div className={styles.buttonContainer}>
           <button className={styles.button}>

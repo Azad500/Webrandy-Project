@@ -11,7 +11,7 @@ import Team from "./Components/Team/Team";
 import UxAudit from "./Components/UxAudit/UxAudit";
 import "./HomePage.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCounter } from "./Redux/counter/counterSlice";
+import { fetchData } from "./Redux/ThunkApi/AsyncThunk";
 
 export default function HomePage() {
   const refreshPage = () => {
@@ -38,11 +38,10 @@ export default function HomePage() {
   // ----------------Get Method--------------------
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchCounter());
+    dispatch(fetchData());
   }, [dispatch]);
-
-  const contents = useSelector((state) => state.counter.contents);
-
+  const data = useSelector((state) => state.data.data);
+  console.log(data);
   // ------------------------------------
   return (
     <section>

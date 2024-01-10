@@ -8,10 +8,7 @@ export default function Profile() {
   function UserName() {
     const inputTexts = document.getElementById("textsPart");
     const passwordsTexts = document.getElementById("passwordsText");
-    if (
-      inputTexts.value === "Azad500" &&
-      passwordsTexts.value === "Mirzazada500"
-    ) {
+    if (inputTexts.value === "123" && passwordsTexts.value === "123") {
       localStorage.setItem("isAuthenticated", "true");
       navigate("/adminPanel");
     }

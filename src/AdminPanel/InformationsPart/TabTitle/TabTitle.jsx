@@ -1,18 +1,12 @@
 import styles from "./TabTitle.module.scss";
 import AllInformationsJS from "../../../Informations";
 import FileInputWithPreview from "./ChooseFile";
-
-export default function TabTitle({
-  tabTitle,
-  setTabTitle,
-  keywords,
-  setKeywords,
-  handleAddInput,
-  handleRemoveInput,
-  setFavIconImg,
-  setLogoLightImg,
-  setLogoDarkImg,
-}) {
+import { useDispatch, useSelector } from "react-redux";
+import { setKeywords, setTabTitle } from "../../../Redux/features/States/slice";
+export default function TabTitle({ handleAddInput, handleRemoveInput }) {
+  const keywords = useSelector((state) => state.states.keywords) || [];
+  const tabTitle = useSelector((state) => state.states.tabTitle);
+  const dispatch = useDispatch();
   return (
     <section className={styles.informations}>
       <form className={styles.form}>
@@ -26,7 +20,7 @@ export default function TabTitle({
             id="tabTitle"
             name="tabTitle"
             value={tabTitle}
-            onChange={(e) => setTabTitle(e.target.value)}
+            onChange={(e) => dispatch(setTabTitle(e.target.value))}
             placeholder={AllInformationsJS.AdminPanel.Navbar.WebrandyTitle}
           />
         </div>
@@ -46,7 +40,7 @@ export default function TabTitle({
                   const updatedKeywords = keywords.map((k) =>
                     k.id === keyword.id ? { ...k, value: e.target.value } : k
                   );
-                  setKeywords(updatedKeywords);
+                  dispatch(setKeywords(updatedKeywords));
                 }}
               />
               <button onClick={() => handleRemoveInput(keyword.id)}>
@@ -66,11 +60,7 @@ export default function TabTitle({
         </button>
       </form>
       <div>
-        <FileInputWithPreview
-          setFavIconImg={setFavIconImg}
-          setLogoLightImg={setLogoLightImg}
-          setLogoDarkImg={setLogoDarkImg}
-        />
+        <FileInputWithPreview />
       </div>
     </section>
   );

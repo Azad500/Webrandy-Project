@@ -1,8 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit"; //state konfiqure etmeye komek edecek
-import counterReducer from "../counter/counterSlice";
+import { configureStore } from "@reduxjs/toolkit";
+import statesSlice from "../features/States/slice";
+import DataSlice from "../features/Data Slice/DataSlice";
 
 export default configureStore({
   reducer: {
-    counter: counterReducer, //her yere gonderile bilecek state var
-  }, //qlobal stateleri ozunde saxlayacaq
+    data: DataSlice,
+    states: statesSlice,
+    //her yere gonderile bilecek state var
+  },
 });
