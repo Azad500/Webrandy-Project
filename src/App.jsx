@@ -15,7 +15,7 @@ export default function App() {
         element={
           <ProtectedRoute>
             <AdminPanel />
-          </ProtectedRoute>
+          </ProtectedRoute> 
         }
       />
     </Routes>

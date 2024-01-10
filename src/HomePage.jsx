@@ -40,8 +40,7 @@ export default function HomePage() {
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
-  const data = useSelector((state) => state.data.data);
-  console.log(data);
+  // const data = useSelector((state) => state.data.data);
   // ------------------------------------
   return (
     <section>
