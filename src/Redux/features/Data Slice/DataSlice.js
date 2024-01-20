@@ -10,9 +10,7 @@ const initialState = {
 export const dataSlice = createSlice({
   name: "Data",
   initialState,
-  reducers: {
-    
-  },
+  reducers: {},
   extraReducers: (builder) => {
     // GET
     builder.addCase(fetchData.pending, (state) => {

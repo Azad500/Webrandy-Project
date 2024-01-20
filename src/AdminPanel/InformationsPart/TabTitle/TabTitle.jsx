@@ -7,6 +7,7 @@ export default function TabTitle({ handleAddInput, handleRemoveInput }) {
   const keywords = useSelector((state) => state.states.keywords) || [];
   const tabTitle = useSelector((state) => state.states.tabTitle);
   const dispatch = useDispatch();
+  const data1 = useSelector((state) => state.data.data);
   return (
     <section className={styles.informations}>
       <form className={styles.form}>

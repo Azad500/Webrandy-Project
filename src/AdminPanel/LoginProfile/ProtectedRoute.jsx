@@ -4,4 +4,3 @@ export default function ProtectedRoute({ children }) {
   const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
   return isAuthenticated ? children : <Navigate to="/" />;
 }
-//backend olmadan username edir

@@ -41,6 +41,7 @@ export default function HomePage() {
     dispatch(fetchData());
   }, [dispatch]);
   // const data = useSelector((state) => state.data.data);
+  // console.log(data);
   // ------------------------------------
   return (
     <section>

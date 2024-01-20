@@ -96,17 +96,17 @@ export default function AdminPanel() {
   useEffect(() => {
     if (data.length > 0) {
       const latestData = data[data.length - 1];
-      dispatch(setTabTitle(latestData.Tabtitle || ""));
-      dispatch(setMail1(latestData.Mail1 || ""));
-      dispatch(setMail2(latestData.Mail2 || ""));
-      dispatch(setPhoneNumber1(latestData.PhoneNumber1 || ""));
-      dispatch(setPhoneNumber2(latestData.PhoneNumber2 || ""));
-      dispatch(setPhoneNumber3(latestData.PhoneNumber3 || ""));
-      dispatch(setAddress(latestData.Address || ""));
-      dispatch(setInstagramLink(latestData.InstagramLink || ""));
-      dispatch(setFacebookLink(latestData.FacebookLink || ""));
-      dispatch(setLinkedinLink(latestData.LinkedinLink || ""));
-      dispatch(setYoutubeLink(latestData.YoutubeLink || ""));
+      dispatch(setTabTitle(latestData.tabTitle || ""));
+      dispatch(setMail1(latestData.mail1 || ""));
+      dispatch(setMail2(latestData.mail2 || ""));
+      dispatch(setPhoneNumber1(latestData.phoneNumber1 || ""));
+      dispatch(setPhoneNumber2(latestData.phoneNumber2 || ""));
+      dispatch(setPhoneNumber3(latestData.phoneNumber3 || ""));
+      dispatch(setAddress(latestData.address || ""));
+      dispatch(setInstagramLink(latestData.instagramLink || ""));
+      dispatch(setFacebookLink(latestData.facebookLink || ""));
+      dispatch(setLinkedinLink(latestData.linkedinLink || ""));
+      dispatch(setYoutubeLink(latestData.youtubeLink || ""));
       if (
         latestData.MetaTagKeywords &&
         Array.isArray(latestData.MetaTagKeywords)

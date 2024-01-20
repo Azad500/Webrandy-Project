@@ -5,7 +5,9 @@ import "react-toastify/dist/ReactToastify.css";
 // GET
 export const fetchData = createAsyncThunk("data/fetchData", async () => {
   try {
-    const response = await fetch("http://localhost:3000/posts");
+    const response = await fetch(
+      "http://terlan125-001-site1.ftempurl.com/api/Information"
+    );
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -22,13 +24,16 @@ export const fetchData = createAsyncThunk("data/fetchData", async () => {
 export const postData = createAsyncThunk("data/postData", async (postData) => {
   toast.success("Əməliyyat uğurla yerinə yetirildi");
 
-  const response = await fetch("http://localhost:3000/posts", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(postData),
-  });
+  const response = await fetch(
+    "http://terlan125-001-site1.ftempurl.com/api/Information/SendAll",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(postData),
+    }
+  );
   if (!response.ok) {
     throw new Error("Network response was not ok");
   }
