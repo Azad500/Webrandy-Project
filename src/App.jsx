@@ -11,7 +11,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/profile" element={<Profile />} />
       <Route
-        path="/adminPanel/*"
+        path="/adminpanel/*"
         element={
           <ProtectedRoute>
             <AdminPanel />
