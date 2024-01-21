@@ -15,7 +15,7 @@ export const dataSlice = createSlice({
     // GET
     builder.addCase(fetchData.pending, (state) => {
       state.isLoading = true;
-      state.data = [];
+      // state.data = [];
       state.error = null;
     });
     builder.addCase(fetchData.fulfilled, (state, action) => {
@@ -32,6 +32,9 @@ export const dataSlice = createSlice({
       state.isLoading = true;
     });
     builder.addCase(postData.fulfilled, (state, action) => {
+      if (!Array.isArray(state.data)) {
+        state.data = [];
+      }
       state.data.push(action.payload);
     });
     builder.addCase(postData.rejected, (state, action) => {
