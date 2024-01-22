@@ -11,7 +11,7 @@ export default function Profile() {
   function UserName() {
     const inputTexts = document.getElementById("textsPart");
     const passwordsTexts = document.getElementById("passwordsText");
-    if (inputTexts.value === "123" && passwordsTexts.value === "123") {
+    if (inputTexts.value === "8888" && passwordsTexts.value === "8888") {
       localStorage.setItem("isAuthenticated", "true");
       dispatch(setIsAuthenticated(true));
       navigate("/adminPanel");
