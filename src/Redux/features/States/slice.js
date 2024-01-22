@@ -17,6 +17,7 @@ const initialState = {
   logoDarkImg: "",
   footerVideo: "",
   keywords: [{ id: 1, value: "" }],
+  isAuthenticated: false,
 };
 export const statesSlice = createSlice({
   name: "states",
@@ -73,6 +74,9 @@ export const statesSlice = createSlice({
     setKeywords: (state, action) => {
       state.keywords = action.payload;
     },
+    setIsAuthenticated: (state, action) => {
+      state.isAuthenticated = action.payload;
+    },
   },
 });
 export const {
@@ -93,5 +97,6 @@ export const {
   setMail1,
   setTabTitle,
   setShowAlert,
+  setIsAuthenticated,
 } = statesSlice.actions;
 export default statesSlice.reducer;
