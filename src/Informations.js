@@ -7,7 +7,7 @@ import BrandingImgJPG from "./Images/Services/branding.png";
 import AzadMirzəzadə from "./Images/TeamImage/AzadMirzəzadə.png";
 import FidanMuradova from "./Images/TeamImage/FidanMuradova.png";
 import MahirTağıyev from "./Images/TeamImage/MahirTağıyev.png";
-import Səidİsaoğlu from "./Images/TeamImage/Səidİsaoğlu.png";
+import Saidİsaoğlu from "./Images/TeamImage/Səidİsaoğlu.png";
 import TarlanMovlamov from "./Images/TeamImage/TarlanMovlamov.png";
 import SitaraNasirova from "./Images/TeamImage/SitaraNasirova.png";
 import AdressArchClient from "./Images/OurClients/AdressArchClient.png";
@@ -267,8 +267,7 @@ const AllInformationsJS = {
         TikTok: "4",
       },
       {
-        Img: Səidİsaoğlu,
-
+        Img: Saidİsaoğlu,
         FullName: "Səid İsaoğlu",
         Position: "Front-End Developer",
         Instagram: "https://www.instagram.com/saidisaoglu/",
