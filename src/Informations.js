@@ -4,9 +4,9 @@ import designJPG from "./Images/Services/design.png";
 import researchingJPG from "./Images/Services/researching.png";
 import mobileAppJPG from "./Images/Services/mobileApp.png";
 import BrandingImgJPG from "./Images/Services/branding.png";
-import AzadMirzəzadə from "./Images/TeamImage/AzadMirzəzadə.png";
+import AzadMirzazada from "./Images/TeamImage/AzadMirzazada.png";
 import FidanMuradova from "./Images/TeamImage/FidanMuradova.png";
-import MahirTağıyev from "./Images/TeamImage/MahirTağıyev.png";
+import MahirTagiyev from "./Images/TeamImage/MahirTagiyev.png";
 import Saidİsaoğlu from "./Images/TeamImage/SaidIsaoglu.png";
 import TarlanMovlamov from "./Images/TeamImage/TarlanMovlamov.png";
 import SitaraNasirova from "./Images/TeamImage/SitaraNasirova.png";
@@ -258,7 +258,7 @@ const AllInformationsJS = {
     TikTokIcon: TikTokIcon,
     teamMates: [
       {
-        Img: AzadMirzəzadə,
+        Img: AzadMirzazada,
         FullName: "Azad Mirzazada",
         Position: "Front-End Developer",
         Instagram: "https://www.instagram.com/azad.mirzazada/",
@@ -305,7 +305,7 @@ const AllInformationsJS = {
         TikTok: "44444",
       },
       {
-        Img: MahirTağıyev,
+        Img: MahirTagiyev,
         FullName: "Mahir Tağıyev",
         Position: "UX/Uİ Designer",
         Instagram: "11111",
