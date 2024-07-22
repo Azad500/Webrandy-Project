@@ -38,7 +38,7 @@ export default function Profile() {
           <input
             type="submit"
             name="submitButton"
-            className={styles.submitButton}
+            className={styles.submitButton} 
             onClick={UserName} // Add the onClick event handler
           />
         </div>

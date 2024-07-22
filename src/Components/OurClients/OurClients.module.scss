@@ -136,6 +136,7 @@
         position: relative;
         max-width: 293px;
         max-height: 326px;
+        transform: translateX(-200px);
         @include responsive728 {
           max-width: 224px;
           max-height: 430px;

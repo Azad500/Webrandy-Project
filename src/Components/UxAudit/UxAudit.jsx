@@ -1,20 +1,34 @@
 import styles from "./UxAudit.module.scss";
 import AllInformationsJS from "../../Informations";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 export default function UxAudit() {
+  useEffect(() => {
+    gsap.to(".uxAuditImage", {
+      y: 0,
+      duration: 1.2,
+    });
+    gsap.to(".uxAuditTextsContainer", {
+      x: 0,
+      duration: 1.2,
+    });
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.uxAuditTextMobileVersion}>
         <p>{AllInformationsJS.UxAuditPart.UxAuditHeader}</p>
       </div>
       <div className={styles.uxAuditContainer}>
-        <div className={styles.uxAuditImage}>
+        <div className={`${styles.uxAuditImage} uxAuditImage`}>
           <img
             src={AllInformationsJS.UxAuditPart.UxAuditImage}
             alt="UX Audit Image"
           />
         </div>
-        <div className={styles.uxAuditTextsContainer}>
+        <div
+          className={`${styles.uxAuditTextsContainer} uxAuditTextsContainer`}
+        >
           <div className={styles.headerTextAndSearchElement}>
             <p>{AllInformationsJS.UxAuditPart.UxAuditHeader}</p>
             <div className={styles.detailedSearchLaptopVersion}>

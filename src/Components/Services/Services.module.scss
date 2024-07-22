@@ -32,6 +32,7 @@
       }
       .CategoriDiv {
         margin: 18px 0;
+        transform: translateX(-200px);
         @include responsive992 {
           margin: auto 0;
         }
@@ -77,10 +78,14 @@
         min-width: 304px;
         display: flex;
         flex-direction: column;
+        .description {
+          transform: translateX(200px);
+        }
         .imgBox {
           max-width: auto;
           border-radius: 8px;
           object-fit: contain;
+          transform: translateY(-50px);
           @include responsive728 {
             border-radius: 24px;
           }
@@ -122,6 +127,7 @@
             list-style: none;
             gap: 8px;
             display: none;
+            transform: translateX(-100px);
             @include responsive728 {
               display: flex;
             }

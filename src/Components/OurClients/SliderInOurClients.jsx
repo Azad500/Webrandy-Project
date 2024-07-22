@@ -3,6 +3,7 @@ import styles from "./SliderInOurClients.module.scss";
 import okeanEmlak from "../../Images/OurClients/okeanEmlak.png";
 import adressArch from "../../Images/OurClients/adressArch.png";
 import wallit from "../../Images/OurClients/wallit.png";
+import { useEffect } from "react";
 
 const clientsData = [
   { logo: okeanEmlak, name: "Okean Əmlak" },

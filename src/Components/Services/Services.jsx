@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AllInformationsJS from "../../Informations";
 import styles from "../Services/Services.module.scss";
+import gsap from "gsap";
 
 export default function Services({ servicesRef }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -16,6 +17,24 @@ export default function Services({ servicesRef }) {
       setSelectedCategory(AllInformationsJS.ServicesPart.Categories[0]);
     }
   }, []);
+  useEffect(() => {
+    gsap.to(".myAdditionalClass", {
+      x: 0,
+      duration: 1.2,
+    });
+    gsap.to(".ImgBox", {
+      y: 0,
+      duration: 1.2,
+    });
+    gsap.to(".hashTag", {
+      x: 0,
+      duration: 1.2,
+    });
+    gsap.to(".Description", {
+      x: 0,
+      duration: 1.2,
+    });
+  }, []);
   const selectedCategoryInfo =
     AllInformationsJS.ServicesPart.CategoriesInfo.find(
       (info) => info.category === selectedCategory
@@ -25,7 +44,7 @@ export default function Services({ servicesRef }) {
       <div className={styles.wrapper}>
         <h2>{AllInformationsJS.ServicesPart.Services}</h2>
         <div className={styles.servicesLeftRightPart}>
-          <div className={styles.CategoriDiv}>
+          <div className={`${styles.CategoriDiv} myAdditionalClass`}>
             <ul>
               {AllInformationsJS.ServicesPart.Categories.map((category) => (
                 <li
@@ -41,12 +60,14 @@ export default function Services({ servicesRef }) {
             </ul>
           </div>
           <div className={styles.description}>
-            <div className={styles.imgBox}>
+            <div className={`${styles.imgBox} ImgBox`}>
               <img src={selectedCategoryInfo?.img} alt="" />
             </div>
-            <p className={styles.description}>{selectedCategoryInfo?.desc}</p>
+            <p className={`${styles.description} Description`}>
+              {selectedCategoryInfo?.desc}
+            </p>
             <div>
-              <p className={styles.hashtag}>
+              <p className={`${styles.hashtag} hashTag`}>
                 {selectedCategoryInfo?.hashtag &&
                   selectedCategoryInfo.hashtag.map((tag) => (
                     <span key={tag}>{tag}</span>

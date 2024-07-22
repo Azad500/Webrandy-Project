@@ -1,8 +1,16 @@
 import styles from "../OurClients/OurClients.module.scss";
 import AllInformationsJS from "../../Informations";
 import SliderInOurClients from "./SliderInOurClients";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 export default function OurClients({ ourClientsRef }) {
+  useEffect(() => {
+    gsap.to(".card", {
+      x: 0,
+      duration: 1.2,
+    });
+  }, []);
   return (
     <section ref={ourClientsRef} className={styles.OurClientsSection}>
       <div className={styles.OurClientsDiv}>
@@ -30,7 +38,7 @@ export default function OurClients({ ourClientsRef }) {
               alt=""
             />
             {AllInformationsJS?.OurClients?.ClientData?.map((client, index) => (
-              <div key={index} className={styles.card}>
+              <div key={index} className={`${styles.card} card`}>
                 <img src={client.img} alt="Kitten Image" />
                 <div className={styles.companyAndCeo}>
                   <h3>{client.companyName}</h3>
